@@ -7,98 +7,118 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img class="page-header__logo-picture" src="http://placehold.it/150x100" width="226" height="30" alt="Cat Energy">
+      <a class="page-header__logo">
+        <img class="page-header__logo-picture" src="http://placehold.it/150x100"
+        width="226" height="30" alt="Cat Energy">
         <p class="page-header__logo-name">Cat Energy</p>
       </a>
-      <a href="#" class="page-header__main-menu"></a>
+      <button class="page-header__main-menu" type="button" aria-label="Открыть меню"></button>
     </header>
     <main class="program-main">
       <h1 class="program-main__capture">Подбор программы</h1>
-      <p class="program-main__speach">Заполните анкету и мы поберём программу питания для вашего кота</p>
-      <form class="program-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="program-form__questionary questionary-form">
-          <ul class="questionary-form__list">
-            <li class="questionary-form__item">
-              <label class="questionary-form__label">Имя:*</label>
-              <input class="questionary-form__input" type="text" name="name" value="Барсик" id="name">
+      <p class="program-main__speach">
+        Заполните анкету и&nbsp;мы&nbsp;поберём программу питания для вашего кота
+      </p>
+      <form class="form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="form__part">
+          <ul class="form__list">
+            <li class="form__item form-text">
+              <label class="form-text__label" for="name">Имя:*</label>
+              <input class="form-text__input" type="text" name="name"
+              placeholder="Барсик" id="name" required >
             </li>
-            <li class="questionary-form__item">
-              <label class="questionary-form__label">Вес (кг):*</label>
-              <input class="questionary-form__input" type="text" name="weight" value="7" id="weight">
+            <li class="form__item form-text">
+              <label class="form-text__label" for="weight">Вес (кг):*</label>
+              <input class="form-text__input" type="text" name="weight"
+              placeholder="7" id="weight" required >
             </li>
-            <li class="questionary-form__item">
-              <label class="questionary-form__label">Возраст (лет):</label>
-              <input class="questionary-form__input" type="text" name="age" value="7" id="age">
+            <li class="form__item form-text">
+              <label class="form-text__label" for="age">Возраст (лет):</label>
+              <input class="form-text__input" type="text" name="age"
+              placeholder="7" id="age" required >
             </li>
           </ul>
         </fieldset>
-        <fieldset class="program-form__weight weight-form">
-          <ul class="weight-form__list">
-            <li class="weight-form__item">
-              <input class="weight-form__input" type="radio" name="mass-options"
+        <fieldset class="form__part">
+          <ul class="form__list">
+            <li class="form__item form-radio">
+              <input class="form-radio__input" type="radio" name="mass-options"
                 value="losing-weight" id="losing-weight" checked>
-              <label class="weight-form__label" for="losing-weight">Похудение</label>
+              <label class="form-radio__label" for="losing-weight">Похудение</label>
             </li>
-            <li class="weight-form__item">
-              <input class="weight-form__input" type="radio" name="mass-options"
+            <li class="form__item form-radio">
+              <input class="form-radio__input" type="radio" name="mass-options"
                 value="mass-gathering" id="mass-gathering">
-              <label class="weight-form__label" for="mass-gathering">Набор массы</label>
+              <label class="form-radio__label" for="mass-gathering">Набор массы</label>
             </li>
-            <li class="weight-form__item">
-              <input class="weight-form__input" type="radio" name="mass-options"
+            <li class="form__item form-radio">
+              <input class="form-radio__input" type="radio" name="mass-options"
                 value="dont-know" id="dont-know">
-              <label class="weight-form__label" for="dont-know">Не знаю (нужен ваш совет)</label>
+              <label class="form-radio__label" for="dont-know">
+                Не&nbsp;знаю (нужен ваш совет)
+              </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="program-form__owner owner-form">
-          <legend class="owner-form__legend">Контактные данные (владельца кота)</legend>
-          <ul class="owner-form__list">
-            <li class="owner-form__item">
-              <label class="owner-form__label" for="email">E-mail:*</label>
-              <input class="owner-form__input" type="email" name="emails" value="Kuklachev@gmail.com" id="email">
+        <fieldset class="form__part">
+          <legend class="form__legend block-capture">
+            Контактные данные (владельца кота)
+          </legend>
+          <ul class="form__list">
+            <li class="form__item form-email">
+              <label class="form-email__label" for="email">E-mail:*</label>
+              <input class="form-email__input" type="email" name="emails"
+              placeholder="Kuklachev@gmail.com" id="email" required >
             </li>
-            <li class="owner-form__item">
-              <label class="owner-form__label" for="tel">Телефон:*</label>
-              <input class="owner-form__input" type="tel" name="tel" value="8 (960) 900-60-90" id="tel">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="program-form__comment comment-form">
-          <legend class="comment-form__legend">Комментарий</legend>
-          <textarea class="comment-form__input" name="about-cat" id="about-cat">Расскажите обо всех повадках кота</textarea>
-        </fieldset>
-        <fieldset class="program-form__additionally additionally-form">
-          <legend class="additionally-form__legend">Дополнительно</legend>
-          <ul class="additionally-form__list">
-            <li class="additionally-form__item">
-              <input class="additionally-form__input" type="checkbox" name="additional-options[]" value="sweetener" id="sweetener" checked>
-              <label class="additionally-form__label" for="sweetener">Сахарозаменитель</label>
-            </li>
-            <li class="additionally-form__item">
-              <input class="additionally-form__input" type="checkbox" name="additional-options[]" value="water" id="water">
-              <label class="additionally-form__label" for="water">Питьевая вода</label>
-            </li>
-            <li class="additionally-form__item">
-              <input class="additionally-form__input" type="checkbox" name="additional-options[]" value="milk" id="milk">
-              <label class="additionally-form__label" for="milk">Молоко</label>
-            </li>
-            <li class="additionally-form__item">
-              <input class="additionally-form__input" type="checkbox" name="additional-options[]" value="vitamins" id="vitamins">
-              <label class="additionally-form__label" for="vitamins">Витамины</label>
+            <li class="form__item form-tel">
+              <label class="form-tel__label" for="tel">Телефон:*</label>
+              <input class="form-tel__input" type="tel" name="tel"
+              placeholder="8 (960) 900-60-90" id="tel" required >
             </li>
           </ul>
         </fieldset>
-        <button  class="program-form__btn" type="submit">Отправить форму</button>
-        <p class="program-form__speach-end">* &mdash; Обязательные поля</p>
+        <fieldset class="form__part">
+          <legend class="form__legend block-capture">Комментарий</legend>
+          <textarea class="form__textarea textarea" name="about-cat" id="about-cat"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="form__part">
+          <legend class="form__legend block-capture">Дополнительно</legend>
+          <ul class="form__list">
+            <li class="form__item form-checkbox">
+              <input class="form-checkbox__input" type="checkbox" name="additional-options[]"
+              value="sweetener" id="sweetener" checked>
+              <label class="form-checkbox__label" for="sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="form__item form-checkbox">
+              <input class="form-checkbox__input" type="checkbox" name="additional-options[]"
+              value="water" id="water">
+              <label class="form-checkbox__label" for="water">Питьевая вода</label>
+            </li>
+            <li class="form__item form-checkbox">
+              <input class="form-checkbox__input" type="checkbox" name="additional-options[]"
+              value="milk" id="milk">
+              <label class="form-checkbox__label" for="milk">Молоко</label>
+            </li>
+            <li class="form__item form-checkbox">
+              <input class="form-checkbox__input" type="checkbox" name="additional-options[]"
+              value="vitamins" id="vitamins">
+              <label class="form-checkbox__label" for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button  class="form__btn" type="submit">Отправить форму</button>
+        <p class="form__speach-end">* &mdash; Обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">
       <section class="maps-block">
-        <h2 class="maps-block__captoin">Приглашаем к сотрудничеству диллеров!</h2>
+        <h2 class="maps-block__captoin">
+          Приглашаем к&nbsp;сотрудничеству диллеров!
+        </h2>
         <p class="maps-block__speach">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="maps-block__map" src="http://placehold.it/150x100" width="226" height="30" alt="Карта">
+        <img class="maps-block__map" src="http://placehold.it/150x100"
+        width="226" height="30" alt="Карта">
       </section>
       <section class="footer-up">
         <h2 class="visually-hidden">Адреса и ссылки</h2>
@@ -106,14 +126,27 @@
           Cat Energy
         </a>
         <ul class="footer-up__social-list">
-          <li class="footer-up__vkontakte"><a href="#">Вконтакте</a></li>
-          <li class="footer-up__instagram"><a href="#">Инстаграмм</a></li>
-          <li class="footer-up__facebook"><a href="#">Фейсбук</a></li>
+          <li class="footer-up__vkontakte"><a href="#" aria-label="Вконтакте">Вконтакте</a></li>
+          <li class="footer-up__instagram"><a href="#" aria-label="Инстаграмм">Инстаграмм</a></li>
+          <li class="footer-up__facebook"><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
         </ul>
         <div class="footer-up__academy-link-block">
           <a class="footer-up__link" href="#">HTML Academy</a>
-          <a class="footer-up__link-logo" href="#"></a>
         </div>
+      </section>
+      <section class="page-menu">
+        <h2 class="visually-hidden">Меню</h2>
+        <ul class="page-menu__list">
+          <li class="page-menu__item">
+            <a class="page-menu__link">Главная</a>
+          </li>
+          <li class="page-menu__item">
+            <a class="page-menu__link">Каталог продукции</a>
+          </li>
+          <li class="page-menu__item">
+            <a class="page-menu__link">Подбор программы</a>
+          </li>
+        </ul>
       </section>
     </footer>
     <script src="app.js"></script>
