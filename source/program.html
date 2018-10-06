@@ -13,6 +13,19 @@
         <p class="page-header__logo-name">Cat Energy</p>
       </a>
       <button class="page-header__main-menu" type="button" aria-label="Открыть меню"></button>
+      <div class="page-header__menu page-menu">
+        <ul class="page-menu__list">
+          <li class="page-menu__item">
+            <a class="page-menu__link">Главная</a>
+          </li>
+          <li class="page-menu__item">
+            <a class="page-menu__link">Каталог продукции</a>
+          </li>
+          <li class="page-menu__item">
+            <a class="page-menu__link">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="program-main">
       <h1 class="program-main__capture">Подбор программы</h1>
@@ -35,7 +48,7 @@
             <li class="form__item form-text">
               <label class="form-text__label" for="age">Возраст (лет):</label>
               <input class="form-text__input" type="text" name="age"
-              placeholder="7" id="age" required >
+              placeholder="7" id="age">
             </li>
           </ul>
         </fieldset>
@@ -78,7 +91,9 @@
           </ul>
         </fieldset>
         <fieldset class="form__part">
-          <legend class="form__legend block-capture">Комментарий</legend>
+          <legend class="form__legend block-capture">
+            <label for="about-cat">Комментарий</label>
+          </legend>
           <textarea class="form__textarea textarea" name="about-cat" id="about-cat"
           placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
@@ -126,27 +141,13 @@
           Cat Energy
         </a>
         <ul class="footer-up__social-list">
-          <li class="footer-up__vkontakte"><a href="#" aria-label="Вконтакте">Вконтакте</a></li>
-          <li class="footer-up__instagram"><a href="#" aria-label="Инстаграмм">Инстаграмм</a></li>
-          <li class="footer-up__facebook"><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
+          <li class="footer-up__vkontakte"><a href="#" aria-label="Вконтакте"></a></li>
+          <li class="footer-up__instagram"><a href="#" aria-label="Инстаграмм"></a></li>
+          <li class="footer-up__facebook"><a href="#" aria-label="Фейсбук"></a></li>
         </ul>
         <div class="footer-up__academy-link-block">
           <a class="footer-up__link" href="#">HTML Academy</a>
         </div>
-      </section>
-      <section class="page-menu">
-        <h2 class="visually-hidden">Меню</h2>
-        <ul class="page-menu__list">
-          <li class="page-menu__item">
-            <a class="page-menu__link">Главная</a>
-          </li>
-          <li class="page-menu__item">
-            <a class="page-menu__link">Каталог продукции</a>
-          </li>
-          <li class="page-menu__item">
-            <a class="page-menu__link">Подбор программы</a>
-          </li>
-        </ul>
       </section>
     </footer>
     <script src="app.js"></script>
