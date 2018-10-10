@@ -1,0 +1,24 @@
+.cover {
+  background: url("/img/index-background-mobile@1x.jpg") no-repeat;
+}
+.cover__caption {
+  width: 280px;
+  padding: 36px 28px;
+
+  font-family:"Oswald",Arial,sans-serif;
+  font-weight:400;
+  font-size: 36px;
+  line-height: 36/36;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cover__message {
+  font-family:"Oswald",Arial,sans-serif;
+  font-weight:400;
+  font-size: 14px;
+  line-height: 14/14;
+
+  text-transform: uppercase;
+  color: #ffffff;
+}

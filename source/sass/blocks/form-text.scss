@@ -1,0 +1,60 @@
+.form-text__label {
+  margin-right: 5px;
+
+  font-style: "Oswald",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16/18;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.form-text__input {
+  padding: 5px;
+
+  outline: none;
+}
+
+.form-text__input:active {
+  border-color: black;
+}
+
+.form-text__input:invalid {
+  border-color: red;
+}
+
+.form-text__input::-webkit-input-placeholder {
+  font-style: "Oswald",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16/18;
+  text-transform: uppercase;
+  color: #444444;
+  }
+
+.form-text__input::-moz-placeholder          {
+  font-style: "Oswald",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16/18;
+  text-transform: uppercase;
+  color: #444444;
+  }/* Firefox 19+ */
+
+.form-text__input:-moz-placeholder           {
+  font-style: "Oswald",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16/18;
+  text-transform: uppercase;
+  color: #444444;
+  }/* Firefox 18- */
+
+.form-text__input:-ms-input-placeholder      {
+  font-style: "Oswald",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16/18;
+  text-transform: uppercase;
+  color: #444444;
+  }

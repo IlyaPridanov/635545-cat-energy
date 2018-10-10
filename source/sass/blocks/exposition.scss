@@ -1,0 +1,60 @@
+.exposition__caption {
+  font-family:"Oswald",Arial,sans-serif;
+  font-weight:400;
+  font-size: 36px;
+  line-height: 36/60;
+  color: #000000;
+}
+
+.exposition__list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.exposition__item {
+  position: relative;
+
+  width: 200px;
+  margin:17px 0px;
+  margin-left: 100px;
+
+
+  font-family:Arial,sans-serif;
+  font-weight:400;
+  font-size: 14px;
+  line-height: 14/18;
+}
+
+.exposition__item::after {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+  left: -85px;
+
+  display: block;
+
+  width: 60px;
+  height: 60px;
+  background-color:#68b738;
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+}
+
+.exposition__item--leaflet-icon::after {
+  background-image:url("/img/advantage-leaf@1x.png");
+}
+
+.exposition__item--powder-icon::after {
+  background-image:url("/img/advantage-powder@1x.png");
+}
+
+.exposition__item--knife-icon::after {
+  background-image:url("/img/advantage-dining@1x.png");
+}
+
+.exposition__item--time-icon::after {
+  background-image:url("/img/advantage-clock@1x.png");
+}

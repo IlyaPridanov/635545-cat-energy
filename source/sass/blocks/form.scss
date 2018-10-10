@@ -1,0 +1,17 @@
+.form__part {
+  border: none;
+}
+
+.form__part:nth-child(2) {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.form__list {
+  list-style: none;
+  padding: 0;
+}
+
+.form__item {
+  margin: 5px 0px;
+}

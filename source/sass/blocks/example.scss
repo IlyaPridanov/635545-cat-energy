@@ -1,0 +1,75 @@
+.example {
+  background: #f2f2f2;
+}
+
+.example__caption {
+  font-family: "Oswald",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36/60;
+}
+
+.example__speach {
+  width: 300px;
+  font-family: Arial,sans-serif;
+  font-weight :400;
+  font-size: 14px;
+  line-height: 14/18;
+}
+
+.example__list {
+  list-style: none;
+
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
+
+.example__item {
+  width: 124px;
+
+  text-align: center;
+
+  border:1px solid #cdcdcd;
+}
+
+.example__list-result {
+  font-family: "Oswald",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24/24;
+  text-transform: uppercase;
+}
+
+.example__list-caption {
+  font-family: Arial,sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12/12;
+  text-transform: uppercase;
+}
+
+.example__result-speach {
+  font-family: "Oswald",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14/20;
+  text-transform: uppercase;
+}
+
+.example__result-block {
+  display: flex;
+}
+
+.example__result-button {
+  font-family: "Oswald",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16/20;
+  text-transform: uppercase;
+
+  border: none;
+
+  background: none;
+}
