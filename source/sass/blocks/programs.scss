@@ -7,9 +7,9 @@
   line-height: 14/18;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
 
-  background: #68b738;
+  background: $green;
 }
 
 .programs__list {
@@ -20,7 +20,7 @@
 }
 
 .programs__item {
-  background: #f2f2f2;
+  background: $white-grey;
 }
 
 .programs__caption {
@@ -30,25 +30,24 @@
   font-size: 24px;
   line-height: 24/37;
   text-transform: uppercase;
-}
 
-.programs__caption--min-cat-icon {
-  background: #f2f2f2 url("/img/icon-cat-slim.svg") no-repeat top left;
-}
+  &--min-cat-icon {
+    background: $white-grey url("/img/icon-cat-slim.svg") no-repeat top left;
+  }
 
-.programs__caption--big-cat-icon {
-  background: #f2f2f2 url("/img/icon-cat-pro.svg") no-repeat top left;
+  &--big-cat-icon {
+    background: $white-grey url("/img/icon-cat-pro.svg") no-repeat top left;
+  }
 }
 
 .programs__speach {
   width: 240px;
 
-  font-family:Arial,sans-serif;
   font-weight:400;
   font-size: 14px;
   line-height: 14/18;
 
-  border-top:1px solid #d9d9d9;
+  border-top:1px solid $border;
 }
 
 .programs__link {
@@ -60,22 +59,20 @@
   line-height: 16/16;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
-}
+  color: $black;
 
-.programs__link::after {
-  content: "";
+  &::after {
+    content: "";
 
-  position: absolute;
-  top: -20px;
-  left: 105px;
+    position: absolute;
+    top: -20px;
+    left: 105px;
 
-  display: block;
+    display: block;
 
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 
-  background: url("/img/icon-right-arrow-long.svg") no-repeat;
-
-
+    background: url("/img/icon-right-arrow-long.svg") no-repeat;
+  }
 }

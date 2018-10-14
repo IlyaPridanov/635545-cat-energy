@@ -12,7 +12,7 @@
       fill: #E55645;
     }
     .st3 {
-      fill: #111111;
+      fill: $black-light;
     }
     .st4 {
       fill: #444444;

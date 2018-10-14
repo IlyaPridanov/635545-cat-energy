@@ -5,40 +5,13 @@
   min-height: 150px;
 
   border:1px solid black;
+
+  &::placeholder {
+    font-style: "Oswald",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16/18;
+    text-transform: uppercase;
+    color: $grey;
+  }
 }
-
-.textarea::-webkit-input-placeholder {
-  font-style: "Oswald",Arial,sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16/18;
-  text-transform: uppercase;
-  color: #444444;
-  }
-
-.textarea::-moz-placeholder          {
-  font-style: "Oswald",Arial,sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16/18;
-  text-transform: uppercase;
-  color: #444444;
-  }/* Firefox 19+ */
-
-.textarea:-moz-placeholder           {
-  font-style: "Oswald",Arial,sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16/18;
-  text-transform: uppercase;
-  color: #444444;
-  }/* Firefox 18- */
-
-.textarea:-ms-input-placeholder      {
-  font-style: "Oswald",Arial,sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16/18;
-  text-transform: uppercase;
-  color: #444444;
-  }

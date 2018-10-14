@@ -12,7 +12,7 @@
         alt="Cat Energy">
       </a>
       <button class="page-header__main-menu" type="button" aria-label="Открыть меню"></button>
-      <div class="page-header__menu page-menu">
+      <nav class="page-header__menu page-menu">
         <ul class="page-menu__list">
           <li class="page-menu__item">
             <a class="page-menu__link">Главная</a>
@@ -24,7 +24,7 @@
             <a class="page-menu__link">Подбор программы</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main class="program-main">
       <h1 class="program-main__capture">Подбор программы</h1>
@@ -51,7 +51,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__part">
+        <fieldset class="form__part form__part--border">
           <ul class="form__list">
             <li class="form__item form-radio">
               <input class="form-radio__input" type="radio" name="mass-options"
@@ -77,14 +77,14 @@
             Контактные данные (владельца кота)
           </legend>
           <ul class="form__list">
-            <li class="form__item form-email">
-              <label class="form-email__label" for="email">E-mail:*</label>
-              <input class="form-email__input" type="email" name="emails"
+            <li class="form__item form-text">
+              <label class="form-text__label" for="email">E-mail:*</label>
+              <input class="form-text__input" type="email" name="emails"
               placeholder="Kuklachev@gmail.com" id="email" required >
             </li>
-            <li class="form__item form-tel">
-              <label class="form-tel__label" for="tel">Телефон:*</label>
-              <input class="form-tel__input" type="tel" name="tel"
+            <li class="form__item form-text">
+              <label class="form-text__label" for="tel">Телефон:*</label>
+              <input class="form-text__input" type="tel" name="tel"
               placeholder="8 (960) 900-60-90" id="tel" required >
             </li>
           </ul>

@@ -1,5 +1,5 @@
 .example {
-  background: #f2f2f2;
+  background: $white-grey;
 }
 
 .example__caption {
@@ -31,7 +31,7 @@
 
   text-align: center;
 
-  border:1px solid #cdcdcd;
+  border:1px solid $grey-light;
 }
 
 .example__list-result {

@@ -1,0 +1,24 @@
+.block-capture {
+  position: relative;
+
+  font-style: "Oswald",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24/24;
+  color: $black;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 450px;
+    top: 10px;
+
+    display: block;
+
+    width: 100%;
+    height: 10px;
+
+    background :$green;
+  }
+}

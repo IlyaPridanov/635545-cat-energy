@@ -3,7 +3,7 @@
   font-weight:400;
   font-size: 36px;
   line-height: 36/60;
-  color: #000000;
+  color: $black;
 }
 
 .exposition__list {
@@ -20,41 +20,39 @@
   margin:17px 0px;
   margin-left: 100px;
 
-
-  font-family:Arial,sans-serif;
   font-weight:400;
   font-size: 14px;
   line-height: 14/18;
-}
 
-.exposition__item::after {
-  content: "";
+  &::after {
+    content: "";
 
-  position: absolute;
-  top: -10px;
-  left: -85px;
+    position: absolute;
+    top: -10px;
+    left: -85px;
 
-  display: block;
+    display: block;
 
-  width: 60px;
-  height: 60px;
-  background-color:#68b738;
-  background-repeat: no-repeat;
-  background-position: 5px 5px;
-}
+    width: 60px;
+    height: 60px;
+    background-color:$green;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+  }
 
-.exposition__item--leaflet-icon::after {
-  background-image:url("/img/advantage-leaf@1x.png");
-}
+  &--leaflet-icon::after {
+    background-image:url("/img/advantage-leaf@1x.png");
+  }
 
-.exposition__item--powder-icon::after {
-  background-image:url("/img/advantage-powder@1x.png");
-}
+  &--powder-icon::after {
+    background-image:url("/img/advantage-powder@1x.png");
+  }
 
-.exposition__item--knife-icon::after {
-  background-image:url("/img/advantage-dining@1x.png");
-}
+  &--knife-icon::after {
+    background-image:url("/img/advantage-dining@1x.png");
+  }
 
-.exposition__item--time-icon::after {
-  background-image:url("/img/advantage-clock@1x.png");
+  &--time-icon::after {
+    background-image:url("/img/advantage-clock@1x.png");
+  }
 }
