@@ -2,8 +2,8 @@
   border: none;
 
   &--border {
-    border-top: 1px solid $border;
-    border-bottom: 1px solid $border;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
   }
 }
 
@@ -24,5 +24,5 @@
   font-size: 14px;
   line-height: 0.875;
   text-transform: uppercase;
-  color: $grey;
+  color: $color-grey;
 }

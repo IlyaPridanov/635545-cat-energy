@@ -11,12 +11,12 @@
   text-decoration:none;
   text-transform:uppercase;
   text-align:center;
-  color:$white;
+  color:$color-white;
 
-  background:$green;
+  background:$color-green;
 
   &--white {
-    color: $grey;
-    background:$white-grey;
+    color: $color-grey;
+    background:$color-white-grey;
   }
 }
