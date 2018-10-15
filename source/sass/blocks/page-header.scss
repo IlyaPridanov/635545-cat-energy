@@ -9,3 +9,13 @@
 
   background: url("/img/icon-mobile-menu.svg") no-repeat;
 }
+
+@media (min-width:768px) {
+  .page-header {
+    display: flex;
+  }
+
+  .page-header__menu-button {
+    display: none;
+  }
+}

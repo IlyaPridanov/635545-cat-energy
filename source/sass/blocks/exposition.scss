@@ -56,3 +56,10 @@
     background-image:url("/img/advantage-clock@1x.png");
   }
 }
+
+@media (min-width:768px) {
+  .exposition__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

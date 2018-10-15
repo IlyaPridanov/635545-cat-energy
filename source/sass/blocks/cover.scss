@@ -22,3 +22,9 @@
   text-transform: uppercase;
   color: $color-white;
 }
+
+@media (min-width:768px) {
+  .cover {
+    background: none;
+  }
+}

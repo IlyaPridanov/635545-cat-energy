@@ -73,3 +73,10 @@
 
   background: none;
 }
+
+@media (min-width:768px) {
+  .example__list-block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
