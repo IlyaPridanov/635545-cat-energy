@@ -2,7 +2,7 @@
   font-family:"Oswald",Arial,sans-serif;
   font-weight:400;
   font-size: 36px;
-  line-height: 36/60;
+  line-height: 0.6;
   color: $black;
 }
 
@@ -22,7 +22,7 @@
 
   font-weight:400;
   font-size: 14px;
-  line-height: 14/18;
+  line-height:0.77;
 
   &::after {
     content: "";
