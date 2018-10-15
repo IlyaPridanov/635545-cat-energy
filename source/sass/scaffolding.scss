@@ -1,0 +1,12 @@
+:root {
+  box-sizing: border-box;
+
+  font-family: Arial, sans-serif;
+  font-weight:400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

@@ -3,17 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-picture" src="http://placehold.it/150x100"
-        width="226" height="30" alt="Cat Energy">
-        <p class="page-header__logo-name">Cat Energy</p>
+        <img class="page-header__logo-picture" src="img/logo-mobile.svg"
+        alt="Cat Energy">
       </a>
-      <button class="page-header__main-menu" type="button" aria-label="Открыть меню"></button>
-      <div class="page-header__menu page-menu">
+      <button class="page-header__menu-button" type="button" aria-label="Открыть меню"></button>
+      <nav class="page-header__menu page-menu">
         <ul class="page-menu__list">
           <li class="page-menu__item">
             <a class="page-menu__link">Главная</a>
@@ -25,7 +24,7 @@
             <a class="page-menu__link">Подбор программы</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main class="catalog-main">
       <h1 class="catalog-main__caption">Каталог продукции</h1>
@@ -33,156 +32,170 @@
         <h2 class="visually-hidden">Основные товары</h2>
         <ul class="production__list">
           <li class="production__item production-card">
-            <img class="production-card__img" src="http://placehold.it/150x100"
-            width="226" height="30" alt="Cat Energy Pro 500г">
-            <div class="production-card__block">
-              <h3 class="production-card__capture">Cat Energy Pro 500г</h3>
-              <dl class="production-card__list">
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Объём</dt>
-                  <dd class="production-card__item-value">500г</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Вкус</dt>
-                  <dd class="production-card__item-value">Курица</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Цена</dt>
-                  <dd class="production-card__item-value">700&nbsp;Р.</dd>
-                </div>
-              </dl>
+            <div class="production-card__flex-block">
+              <img class="production-card__img" src="img/chicken-small-mobile@1x.jpg"
+              alt="Cat Energy Pro 500г">
+              <div class="production-card__block">
+                <h3 class="production-card__capture">Cat Energy Pro 500г</h3>
+                <dl class="production-card__list">
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Объём</dt>
+                    <dd class="production-card__item-value">500г</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Вкус</dt>
+                    <dd class="production-card__item-value">Курица</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Цена</dt>
+                    <dd class="production-card__item-value">700&nbsp;Р.</dd>
+                  </div>
+                </dl>
+              </div>
             </div>
             <a class="production-card__link button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card">
-            <img class="production-card__img" src="http://placehold.it/150x100"
-            width="226" height="30" alt="">
-            <div class="production-card__block">
-              <h3 class="production-card__capture">Cat Energy Pro 1000г</h3>
-              <dl class="production-card__list">
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Объём</dt>
-                  <dd class="production-card__item-value">1000г</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Вкус</dt>
-                  <dd class="production-card__item-value">Курица</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Цена</dt>
-                  <dd class="production-card__item-value">1000&nbsp;Р.</dd>
-                </div>
-              </dl>
+            <div class="production-card__flex-block">
+              <img class="production-card__img" src="img/chicken-big-mobile@1x.jpg"
+              alt="Cat Energy Pro 1000г">
+              <div class="production-card__block">
+                <h3 class="production-card__capture">Cat Energy Pro 1000г</h3>
+                <dl class="production-card__list">
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Объём</dt>
+                    <dd class="production-card__item-value">1000г</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Вкус</dt>
+                    <dd class="production-card__item-value">Курица</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Цена</dt>
+                    <dd class="production-card__item-value">1000&nbsp;Р.</dd>
+                  </div>
+                </dl>
+              </div>
             </div>
             <a class="production-card__link button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card">
-            <img class="production-card__img" src="http://placehold.it/150x100"
-            width="226" height="30" alt="">
-            <div class="production-card__block">
-              <h3 class="production-card__capture">Cat Energy Pro 500г</h3>
-              <dl class="production-card__list">
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Объём</dt>
-                  <dd class="production-card__item-value">500г</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Вкус</dt>
-                  <dd class="production-card__item-value">Рыба</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Цена</dt>
-                  <dd class="production-card__item-value">700&nbsp;Р.</dd>
-                </div>
-              </dl>
+            <div class="production-card__flex-block">
+              <img class="production-card__img" src="img/fish-small-mobile@1x.jpg"
+              alt="Cat Energy Pro 500г">
+              <div class="production-card__block">
+                <h3 class="production-card__capture">Cat Energy Pro 500г</h3>
+                <dl class="production-card__list">
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Объём</dt>
+                    <dd class="production-card__item-value">500г</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Вкус</dt>
+                    <dd class="production-card__item-value">Рыба</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Цена</dt>
+                    <dd class="production-card__item-value">700&nbsp;Р.</dd>
+                  </div>
+                </dl>
+              </div>
             </div>
             <a class="production-card__link button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card">
-            <img class="production-card__img" src="http://placehold.it/150x100"
-            width="226" height="30" alt="">
-            <div class="production-card__block">
-              <h3 class="production-card__capture">Cat Energy Pro 1000г</h3>
-              <dl class="production-card__list">
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Объём</dt>
-                  <dd class="production-card__item-value">1000г</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Вкус</dt>
-                  <dd class="production-card__item-value">Рыба</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Цена</dt>
-                  <dd class="production-card__item-value">1000&nbsp;Р.</dd>
-                </div>
-              </dl>
+            <div class="production-card__flex-block">
+              <img class="production-card__img" src="img/fish-big-mobile@1x.jpg"
+              alt="Cat Energy Pro 1000г">
+              <div class="production-card__block">
+                <h3 class="production-card__capture">Cat Energy Pro 1000г</h3>
+                <dl class="production-card__list">
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Объём</dt>
+                    <dd class="production-card__item-value">1000г</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Вкус</dt>
+                    <dd class="production-card__item-value">Рыба</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Цена</dt>
+                    <dd class="production-card__item-value">1000&nbsp;Р.</dd>
+                  </div>
+                </dl>
+              </div>
             </div>
             <a class="production-card__link button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card">
-            <img class="production-card__img" src="http://placehold.it/150x100"
-            width="226" height="30" alt="">
-            <div class="production-card__block">
-              <h3 class="production-card__capture">Cat Energy Slim 500г</h3>
-              <dl class="production-card__list">
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Объём</dt>
-                  <dd class="production-card__item-value">500г</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Вкус</dt>
-                  <dd class="production-card__item-value">Гречка</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Цена</dt>
-                  <dd class="production-card__item-value">400&nbsp;Р.</dd>
-                </div>
-              </dl>
+            <div class="production-card__flex-block">
+              <img class="production-card__img" src="img/buckwheat-small-mobile@1x.jpg"
+              alt="Cat Energy Slim 500г">
+              <div class="production-card__block">
+                <h3 class="production-card__capture">Cat Energy Slim 500г</h3>
+                <dl class="production-card__list">
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Объём</dt>
+                    <dd class="production-card__item-value">500г</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Вкус</dt>
+                    <dd class="production-card__item-value">Гречка</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Цена</dt>
+                    <dd class="production-card__item-value">400&nbsp;Р.</dd>
+                  </div>
+                </dl>
+              </div>
             </div>
             <a class="production-card__link button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card">
-            <img class="production-card__img" src="http://placehold.it/150x100"
-            width="226" height="30" alt="">
-            <div class="production-card__block">
-              <h3 class="production-card__capture">Cat Energy Slim 1000г</h3>
-              <dl class="production-card__list">
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Объём</dt>
-                  <dd class="production-card__item-value">1000г</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Вкус</dt>
-                  <dd class="production-card__item-value">Курица</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Цена</dt>
-                  <dd class="production-card__item-value">700&nbsp;Р.</dd>
-                </div>
-              </dl>
+            <div class="production-card__flex-block">
+              <img class="production-card__img" src="img/buckwheat-big-mobile@1x.jpg"
+              alt="Cat Energy Slim 1000г">
+              <div class="production-card__block">
+                <h3 class="production-card__capture">Cat Energy Slim 1000г</h3>
+                <dl class="production-card__list">
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Объём</dt>
+                    <dd class="production-card__item-value">1000г</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Вкус</dt>
+                    <dd class="production-card__item-value">Курица</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Цена</dt>
+                    <dd class="production-card__item-value">700&nbsp;Р.</dd>
+                  </div>
+                </dl>
+              </div>
             </div>
             <a class="production-card__link button" href="#">Заказать</a>
           </li>
           <li class="production__item production-card">
-            <img class="production-card__img" src="http://placehold.it/150x100"
-            width="226" height="30" alt="">
-            <div class="production-card__block">
-              <h3 class="production-card__capture">Cat Energy Pro 500г</h3>
-              <dl class="production-card__list">
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Объём</dt>
-                  <dd class="production-card__item-value">500г</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Вкус</dt>
-                  <dd class="production-card__item-value">Рис</dd>
-                </div>
-                <div class="production-card__item-block">
-                  <dt class="production-card__item-characteristic">Цена</dt>
-                  <dd class="production-card__item-value">500&nbsp;Р.</dd>
-                </div>
-              </dl>
+            <div class="production-card__flex-block">
+              <img class="production-card__img" src="img/rice-small-mobile@1x.jpg"
+              alt="Cat Energy Pro 500г">
+              <div class="production-card__block">
+                <h3 class="production-card__capture">Cat Energy Pro 500г</h3>
+                <dl class="production-card__list">
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Объём</dt>
+                    <dd class="production-card__item-value">500г</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Вкус</dt>
+                    <dd class="production-card__item-value">Рис</dd>
+                  </div>
+                  <div class="production-card__item-block">
+                    <dt class="production-card__item-characteristic">Цена</dt>
+                    <dd class="production-card__item-value">500&nbsp;Р.</dd>
+                  </div>
+                </dl>
+              </div>
             </div>
             <a class="production-card__link button" href="#">Заказать</a>
           </li>
@@ -206,7 +219,7 @@
             </dl>
             <a class="additional__link button" href="#">Заказать</a>
           </li>
-          <li class="additional-products-item additional">
+          <li class="additional-products__item additional">
             <h3 class="additional__caption">Питьевая вода</h3>
             <dl class="additional__list">
               <dt class="additional__characteristic">5&nbsp;литров</dt>
@@ -214,7 +227,7 @@
             </dl>
             <a class="additional__link button" href="#">Заказать</a>
           </li>
-          <li class="additional-products-item additional">
+          <li class="additional-products__item additional">
             <h3 class="additional__caption">Молко</h3>
             <dl class="additional__list">
               <dt class="additional__characteristic">1&nbsp;литр</dt>
@@ -222,7 +235,7 @@
             </dl>
             <a class="additional__link button" href="#">Заказать</a>
           </li>
-          <li class="additional-products-item additional">
+          <li class="additional-products__item additional">
             <h3 class="additional__caption">Витамины</h3>
             <dl class="additional__list">
               <dt class="additional__characteristic">1&nbsp;упаковка (30&nbsp;г)</dt>
@@ -238,19 +251,21 @@
           Закажите всё и&nbsp;получите чехол для кота в&nbsp;подарок!
         </a>
       </section>
+    </main>
     <footer class="page-footer">
       <section class="maps-block">
-        <h2 class="maps-block__captoin">
-          Приглашаем к&nbsp;сотрудничеству диллеров!
-        </h2>
-        <p class="maps-block__speach">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="maps-block__map" src="http://placehold.it/150x100"
-        width="226" height="30" alt="Карта">
+        <div class="maps-block__flex">
+          <h2 class="maps-block__captoin">
+            Приглашаем к&nbsp;сотрудничеству диллеров!
+          </h2>
+          <p class="maps-block__speach">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <img class="maps-block__map" src="img/bg-map-mobile@1x.png" alt="Карта">
       </section>
       <section class="footer-up">
         <h2 class="visually-hidden">Адреса и ссылки</h2>
         <a class="footer-up__logo" href="#">
-          Cat Energy
+          <img class="maps-block__logo-img" src="img/logo-footer.svg" alt="Cat Energy">
         </a>
         <ul class="footer-up__social-list">
           <li class="footer-up__vkontakte"><a href="#" aria-label="Вконтакте"></a></li>
@@ -258,11 +273,13 @@
           <li class="footer-up__facebook"><a href="#" aria-label="Фейсбук"></a></li>
         </ul>
         <div class="footer-up__academy-link-block">
-          <a class="footer-up__link" href="#">HTML Academy</a>
+          <a class="footer-up__link" href="#">
+            <span class="footer-up__link-caption">HTML Academy</span>
+            <img class="footer-up__link-img" src="img/htmlacademy.svg" alt="HTML Academy">
+          </a>
         </div>
       </section>
     </footer>
-    </main>
     <script src="app.js"></script>
   </body>
 </html>

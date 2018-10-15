@@ -1,0 +1,33 @@
+.form-text__label {
+  margin-right: 5px;
+
+  font-style: "Oswald",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0,88;
+  text-transform: uppercase;
+  color: $color-black-light;
+}
+
+.form-text__input {
+  padding: 5px;
+
+  outline: none;
+
+  &:active {
+    border-color: black;
+  }
+
+  &:invalid {
+    border-color: red;
+  }
+
+  &::placeholder {
+    font-style: "Oswald",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0,88;
+    text-transform: uppercase;
+    color: $color-grey;
+  }
+}

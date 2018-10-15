@@ -1,0 +1,17 @@
+.textarea {
+  resize: none;
+
+  width: 250px;
+  min-height: 150px;
+
+  border:1px solid black;
+
+  &::placeholder {
+    font-style: "Oswald",Arial,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0.88;
+    text-transform: uppercase;
+    color: $color-grey;
+  }
+}

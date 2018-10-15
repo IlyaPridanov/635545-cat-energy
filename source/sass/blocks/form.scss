@@ -1,0 +1,28 @@
+.form__part {
+  border: none;
+
+  &--border {
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+  }
+}
+
+
+.form__list {
+  list-style: none;
+  padding: 0;
+}
+
+.form__item {
+  margin: 5px 0px;
+}
+
+.form__speach-end {
+  margin: 10px auto;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 0.875;
+  text-transform: uppercase;
+  color: $color-grey;
+}

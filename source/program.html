@@ -3,17 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-picture" src="http://placehold.it/150x100"
-        width="226" height="30" alt="Cat Energy">
-        <p class="page-header__logo-name">Cat Energy</p>
+        <img class="page-header__logo-picture" src="img/logo-mobile.svg"
+        alt="Cat Energy">
       </a>
-      <button class="page-header__main-menu" type="button" aria-label="Открыть меню"></button>
-      <div class="page-header__menu page-menu">
+      <button class="page-header__menu-button" type="button" aria-label="Открыть меню"></button>
+      <nav class="page-header__menu page-menu">
         <ul class="page-menu__list">
           <li class="page-menu__item">
             <a class="page-menu__link">Главная</a>
@@ -25,7 +24,7 @@
             <a class="page-menu__link">Подбор программы</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main class="program-main">
       <h1 class="program-main__capture">Подбор программы</h1>
@@ -52,7 +51,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__part">
+        <fieldset class="form__part form__part--border">
           <ul class="form__list">
             <li class="form__item form-radio">
               <input class="form-radio__input" type="radio" name="mass-options"
@@ -78,14 +77,14 @@
             Контактные данные (владельца кота)
           </legend>
           <ul class="form__list">
-            <li class="form__item form-email">
-              <label class="form-email__label" for="email">E-mail:*</label>
-              <input class="form-email__input" type="email" name="emails"
+            <li class="form__item form-text">
+              <label class="form-text__label" for="email">E-mail:*</label>
+              <input class="form-text__input" type="email" name="emails"
               placeholder="Kuklachev@gmail.com" id="email" required >
             </li>
-            <li class="form__item form-tel">
-              <label class="form-tel__label" for="tel">Телефон:*</label>
-              <input class="form-tel__input" type="tel" name="tel"
+            <li class="form__item form-text">
+              <label class="form-text__label" for="tel">Телефон:*</label>
+              <input class="form-text__input" type="tel" name="tel"
               placeholder="8 (960) 900-60-90" id="tel" required >
             </li>
           </ul>
@@ -122,23 +121,24 @@
             </li>
           </ul>
         </fieldset>
-        <button  class="form__btn" type="submit">Отправить форму</button>
+        <button  class="form__btn button" type="submit">Отправить форму</button>
         <p class="form__speach-end">* &mdash; Обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">
       <section class="maps-block">
-        <h2 class="maps-block__captoin">
-          Приглашаем к&nbsp;сотрудничеству диллеров!
-        </h2>
-        <p class="maps-block__speach">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="maps-block__map" src="http://placehold.it/150x100"
-        width="226" height="30" alt="Карта">
+        <div class="maps-block__flex">
+          <h2 class="maps-block__captoin">
+            Приглашаем к&nbsp;сотрудничеству диллеров!
+          </h2>
+          <p class="maps-block__speach">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <img class="maps-block__map" src="img/bg-map-mobile@1x.png" alt="Карта">
       </section>
       <section class="footer-up">
         <h2 class="visually-hidden">Адреса и ссылки</h2>
         <a class="footer-up__logo" href="#">
-          Cat Energy
+          <img class="maps-block__logo-img" src="img/logo-footer.svg" alt="Cat Energy">
         </a>
         <ul class="footer-up__social-list">
           <li class="footer-up__vkontakte"><a href="#" aria-label="Вконтакте"></a></li>
@@ -146,7 +146,10 @@
           <li class="footer-up__facebook"><a href="#" aria-label="Фейсбук"></a></li>
         </ul>
         <div class="footer-up__academy-link-block">
-          <a class="footer-up__link" href="#">HTML Academy</a>
+          <a class="footer-up__link" href="#">
+            <span class="footer-up__link-caption">HTML Academy</span>
+            <img class="footer-up__link-img" src="img/htmlacademy.svg" alt="HTML Academy">
+          </a>
         </div>
       </section>
     </footer>
