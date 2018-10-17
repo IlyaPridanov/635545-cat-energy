@@ -2,12 +2,13 @@
   display:block;
 
   width:300px;
+  margin: 0 20px;
   padding:10px 30px;
 
   font-family: "Oswald",Arial,sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 0.8;
+  line-height: 1.25;
   text-decoration:none;
   text-transform:uppercase;
   text-align:center;
@@ -18,5 +19,11 @@
   &--white {
     color: $color-grey;
     background:$color-white-grey;
+  }
+}
+
+@media (min-width:768px) {
+  .button {
+    margin: 0 70px;
   }
 }

@@ -22,7 +22,28 @@
 
   font-weight: 400;
   font-size: 14px;
-  line-height: 0.875;
+  line-height: 1.2575;
   text-transform: uppercase;
   color: $color-grey;
+}
+
+@media (min-width:768px) {
+  .form__list--checkbox-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__btn-flex {
+    display: flex;
+  }
+}
+
+@media (min-width:1438px) {
+  .form__flex1 {
+    display: flex;
+  }
+
+  .form__list {
+    display: flex;
+  }
 }

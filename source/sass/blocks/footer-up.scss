@@ -1,25 +1,35 @@
 .footer-up__logo {
   display: block;
 
-  width:130px;
-  height:30px;
+  width: 130px;
+  height: 30px;
 }
 
 .footer-up__social-list {
-  list-style:none;
+  list-style: none;
 
   border-bottom:1px solid $color-border;
   border-top:1px solid $color-border;
 }
 
 .footer-up__link {
-  font-size:20px;
-  line-height:1;
-  color:grey;
-  text-decoration:none;
+  font-size: 20px;
+  line-height: 1;
+  color: grey;
+  text-decoration: none;
 }
 
 .footer-up__link-img {
-  width:32px;
-  height:36px;
+  width: 32px;
+  height: 36px;
+}
+
+@media (min-width:768px) {
+  .footer-up {
+    display: flex;
+  }
+
+  .footer-up__social-list {
+    border: none;
+  }
 }

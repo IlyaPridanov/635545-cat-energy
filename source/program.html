@@ -15,10 +15,10 @@
       <nav class="page-header__menu page-menu">
         <ul class="page-menu__list">
           <li class="page-menu__item">
-            <a class="page-menu__link">Главная</a>
+            <a class="page-menu__link" href="index.html">Главная</a>
           </li>
           <li class="page-menu__item">
-            <a class="page-menu__link">Каталог продукции</a>
+            <a class="page-menu__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="page-menu__item">
             <a class="page-menu__link">Подбор программы</a>
@@ -32,46 +32,48 @@
         Заполните анкету и&nbsp;мы&nbsp;поберём программу питания для вашего кота
       </p>
       <form class="form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__part">
-          <ul class="form__list">
-            <li class="form__item form-text">
-              <label class="form-text__label" for="name">Имя:*</label>
-              <input class="form-text__input" type="text" name="name"
-              placeholder="Барсик" id="name" required >
-            </li>
-            <li class="form__item form-text">
-              <label class="form-text__label" for="weight">Вес (кг):*</label>
-              <input class="form-text__input" type="text" name="weight"
-              placeholder="7" id="weight" required >
-            </li>
-            <li class="form__item form-text">
-              <label class="form-text__label" for="age">Возраст (лет):</label>
-              <input class="form-text__input" type="text" name="age"
-              placeholder="7" id="age">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__part form__part--border">
-          <ul class="form__list">
-            <li class="form__item form-radio">
-              <input class="form-radio__input" type="radio" name="mass-options"
-                value="losing-weight" id="losing-weight" checked>
-              <label class="form-radio__label" for="losing-weight">Похудение</label>
-            </li>
-            <li class="form__item form-radio">
-              <input class="form-radio__input" type="radio" name="mass-options"
-                value="mass-gathering" id="mass-gathering">
-              <label class="form-radio__label" for="mass-gathering">Набор массы</label>
-            </li>
-            <li class="form__item form-radio">
-              <input class="form-radio__input" type="radio" name="mass-options"
-                value="dont-know" id="dont-know">
-              <label class="form-radio__label" for="dont-know">
-                Не&nbsp;знаю (нужен ваш совет)
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__flex1">
+          <fieldset class="form__part">
+            <ul class="form__list">
+              <li class="form__item form-text">
+                <label class="form-text__label" for="name">Имя:*</label>
+                <input class="form-text__input" type="text" name="name"
+                placeholder="Барсик" id="name" required >
+              </li>
+              <li class="form__item form-text">
+                <label class="form-text__label" for="weight">Вес (кг):*</label>
+                <input class="form-text__input" type="text" name="weight"
+                placeholder="7" id="weight" required >
+              </li>
+              <li class="form__item form-text">
+                <label class="form-text__label" for="age">Возраст (лет):</label>
+                <input class="form-text__input" type="text" name="age"
+                placeholder="7" id="age">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__part form__part--border">
+            <ul class="form__list">
+              <li class="form__item form-radio">
+                <input class="form-radio__input" type="radio" name="mass-options"
+                  value="losing-weight" id="losing-weight" checked>
+                <label class="form-radio__label" for="losing-weight">Похудение</label>
+              </li>
+              <li class="form__item form-radio">
+                <input class="form-radio__input" type="radio" name="mass-options"
+                  value="mass-gathering" id="mass-gathering">
+                <label class="form-radio__label" for="mass-gathering">Набор массы</label>
+              </li>
+              <li class="form__item form-radio">
+                <input class="form-radio__input" type="radio" name="mass-options"
+                  value="dont-know" id="dont-know">
+                <label class="form-radio__label" for="dont-know">
+                  Не&nbsp;знаю (нужен ваш совет)
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="form__part">
           <legend class="form__legend block-capture">
             Контактные данные (владельца кота)
@@ -98,7 +100,7 @@
         </fieldset>
         <fieldset class="form__part">
           <legend class="form__legend block-capture">Дополнительно</legend>
-          <ul class="form__list">
+          <ul class="form__list form__list--checkbox-flex">
             <li class="form__item form-checkbox">
               <input class="form-checkbox__input" type="checkbox" name="additional-options[]"
               value="sweetener" id="sweetener" checked>
@@ -121,8 +123,10 @@
             </li>
           </ul>
         </fieldset>
-        <button  class="form__btn button" type="submit">Отправить форму</button>
-        <p class="form__speach-end">* &mdash; Обязательные поля</p>
+        <div class="form__btn-flex">
+          <button  class="form__btn button" type="submit">Отправить форму</button>
+          <p class="form__speach-end">* &mdash; Обязательные поля</p>
+        </div>
       </form>
     </main>
     <footer class="page-footer">

@@ -1,9 +1,21 @@
+$color-cover-green: #64a83b;
+
 .cover {
-  background: url("/img/index-background-mobile@1x.jpg") no-repeat;
+  position: relative;
+
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 200px;
+
+  background-color: $color-cover-green;
+  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .cover__caption {
   width: 280px;
-  padding: 36px 28px;
+
+  margin: 0 auto;
 
   font-family:"Oswald",Arial,sans-serif;
   font-weight:400;
@@ -14,17 +26,95 @@
 }
 
 .cover__message {
+  margin: 0 auto;
+
   font-family:"Oswald",Arial,sans-serif;
   font-weight:400;
   font-size: 14px;
   line-height: 1;
+  color: $color-white;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+
+.cover__img {
+  z-index: 1;
+
+  position: absolute;
+  top: 140px;
+  left: 50%;
+
+  margin-left: -140px;
+}
+
+.cover__btn {
+  position: relative;
+  top: 240px;
+
+  display: block;
+
+  width: 280px;
+
+  margin: 0 auto;
+  padding: 20px 70px;
+
+  font-family:"Oswald",Arial,sans-serif;
+  font-weight:400;
+  font-size: 14px;
+  line-height: 1.3;
+  text-decoration: none;
   text-transform: uppercase;
   color: $color-white;
+
+  background: $color-green;
 }
 
 @media (min-width:768px) {
   .cover {
     background: none;
+  }
+
+  .cover__caption {
+    margin-left: 120px;
+
+    font-size: 60px;
+    text-align: left;
+    color: $color-black;
+  }
+
+  .cover__message {
+    margin-left: 120px;
+
+    font-size: 20px;
+    text-align: left;
+    color: $color-black;
+  }
+
+  .cover__btn {
+    z-index: 20;
+    top: 20px;
+
+    width: 260px;
+    margin-left: 120px;
+    padding: 20px 0;
+
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+@media (min-width:1438px) {
+  .cover__caption {
+    margin-left: 184px;
+  }
+
+  .cover__message {
+    margin-left: 184px;
+  }
+
+  .cover__btn {
+    margin-left: 184px;
   }
 }

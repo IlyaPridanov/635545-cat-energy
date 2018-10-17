@@ -1,6 +1,8 @@
 
 .page-header__logo img {
-  width: 260px;
+  width: 230px;
+
+  margin: 0 auto;
 }
 
 .page-header__menu-button {
@@ -8,6 +10,13 @@
   height: 44px;
 
   background: url("/img/icon-mobile-menu.svg") no-repeat;
+}
+
+.page-header__up {
+  width: 280px;
+  min-height: 65px;
+
+  margin: 0 auto;
 }
 
 @media (min-width:768px) {
