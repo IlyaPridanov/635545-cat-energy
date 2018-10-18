@@ -21,3 +21,16 @@
   margin:0;
   margin-left:auto;
 }
+
+@media (min-width:768px) {
+  .additional__block {
+    display: flex;
+  }
+}
+
+@media (min-width:1300px) {
+  .additional {
+    display: flex;
+    justify-content: space-between;
+  }
+}

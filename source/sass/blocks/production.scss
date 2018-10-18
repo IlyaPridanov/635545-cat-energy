@@ -1,10 +1,16 @@
 .production__list {
-  list-style:none;
+  list-style: none;
 
-  padding:0;
+  padding: 0;
 }
 
-
-.production__plus {
+.production__item {
   border-bottom:1px solid $color-border;
+}
+
+@media (min-width:768px) {
+  .production__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

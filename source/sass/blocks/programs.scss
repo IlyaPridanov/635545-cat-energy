@@ -1,22 +1,9 @@
-.programs__btn {
-  padding: 20px 70px;
-
-  font-family:"Oswald",Arial,sans-serif;
-  font-weight:400;
-  font-size: 14px;
-  line-height: 0.77;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $color-white;
-
-  background: $color-green;
-}
 
 .programs__list {
   list-style: none;
 
   padding: 0;
-  margin: 0;
+  margin: 0 20px;
 }
 
 .programs__item {
@@ -28,7 +15,7 @@
   font-family:"Oswald",Arial,sans-serif;
   font-weight:400;
   font-size: 24px;
-  line-height: 0.65;
+  line-height: 1.675;
   text-transform: uppercase;
 
   &--min-cat-icon {
@@ -45,7 +32,7 @@
 
   font-weight:400;
   font-size: 14px;
-  line-height: 0.77;
+  line-height: 1.3;
 
   border-top:1px solid $color-border;
 }
@@ -74,5 +61,19 @@
     height: 30px;
 
     background: url("/img/icon-right-arrow-long.svg") no-repeat;
+  }
+}
+
+@media (min-width:768px) {
+  .programs__list {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width:1300px) {
+  .programs__list {
+    display: flex;
+
+    margin: 0 40px;
   }
 }
