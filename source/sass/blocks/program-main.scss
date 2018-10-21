@@ -1,16 +1,28 @@
+.program-main {
+  padding-top: 15px;
+}
+
 .program-main__capture {
-  font-style: "Oswald",Arial,sans-serif;
+  @include wrap();
+
+  margin-bottom: 25px;
+
+  font-family: $Oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.67;
   color: $color-black-light;
+  text-align: left;
 }
 
 .program-main__speach {
-  font-style: "Oswald",Arial,sans-serif;
+  @include wrap();
+
+  font-family: $Oswald;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.3;
   text-transform: uppercase;
   color: $color-black-light;
+  text-align: left;
 }

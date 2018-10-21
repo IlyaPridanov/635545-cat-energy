@@ -1,16 +1,21 @@
-.catalog-main__caption {
-  padding:10px 20px;
+.catalog-main {
+  padding-top: 15px;
+  margin-bottom: 35px;
+}
 
-  font-family: "Oswald",Arial,sans-serif;
+.catalog-main__caption {
+  @include wrap();
+
+  margin-bottom: 29px;
+
+  font-family: $Oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.67;
-
-  border-bottom:1px solid $color-border;
-  border-top:1px solid $color-border;
+  text-align: left;
 }
 
-@media (min-width:1300px) {
+@media (min-width:$desktop-width) {
   .catalog-main__flex {
     display: flex;
     justify-content: space-between;

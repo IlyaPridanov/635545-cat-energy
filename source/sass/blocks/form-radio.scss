@@ -1,8 +1,60 @@
+.form-radio {
+  margin-bottom: 22px
+}
+
 .form-radio__label {
-  font-style: "Oswald",Arial,sans-serif;
+  position: relative;
+
+  margin-left: 46px;;
+
+  font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.258;
   text-transform: uppercase;
   color: $color-black-light;
+}
+
+.form-radio__input {
+  display: none;
+}
+
+.form-radio__input:active + label {
+  opacity: 0.5;
+}
+
+.form-radio__input + label::before {
+  content:"";
+
+  position:absolute;
+  top: -2px;
+  left: -46px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid $color-radio;
+  border-radius: 50%;
+}
+
+.form-radio__input:active + label::before {
+  opacity: 0.5;
+}
+
+.form-radio__input:checked + label::after {
+  content:"";
+
+  position: absolute;
+  top: 7px;
+  left: -37px;
+
+  width: 12px;
+  height: 12px;
+
+  background-color: $color-green;
+  border-radius: 50%;
+}
+
+.form-radio__input:active + label::after {
+  opacity: 0.5;
 }

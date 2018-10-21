@@ -1,12 +1,30 @@
+.additional-products {
+  margin-bottom: 40px;
+  padding-top: 14px;
+}
+
+.additional-products__capture {
+  @include wrap();
+
+  margin-bottom: 33px;
+}
+
 .additional-products__link {
   list-style: none;
+
+  margin: 0;
   padding: 0;
 }
 
 .additional-products__item {
-  border-bottom: 1px solid $color-grey;
+  @include wrap();
+
+  margin-top: -1px;
+
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
 }
 
-@media (min-width:768px) {
+@media (min-width:$tablet-width) {
 
 }
