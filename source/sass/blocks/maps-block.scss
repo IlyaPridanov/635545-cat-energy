@@ -1,15 +1,25 @@
 .maps-block {
-  background:$color-white;
+  padding-top: 15px;
+
+  background: $color-white-grey;
+
+  &--index {
+    background: $color-white;
+  }
 }
 
 .maps-block__flex {
+  @include wrap();
+
   display: flex;
+
+  margin-bottom: 12px;
 }
 
 .maps-block__captoin {
   width: 140px;
 
-  font-family: "Oswald",Arial,sans-serif;
+  font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -18,9 +28,24 @@
 
 .maps-block__speach {
   width: 140px;
+
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
 }
 
-@media (min-width:1300px) {
+.maps-block__map {
+  display: block;
+
+  margin: 0 auto;
+  height: 360px;
+  width: 320px;
+
+
+}
+
+@media (min-width:$desktop-width) {
   .maps-block {
     position: relative;
   }

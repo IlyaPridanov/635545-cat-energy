@@ -1,5 +1,17 @@
+.additional {
+  padding-top: 13px;
+  padding-bottom: 17px;
+}
+
+.additional__block {
+  margin-bottom: 15px;
+}
+
 .additional__caption {
-  font-style: "Oswald",Arial,sans-serif;
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -10,8 +22,8 @@
 .additional__list {
   display:flex;
 
-  font-style: Arial,sans-serif;
-  font-weight: 400;
+  margin: 0;
+
   font-size: 14px;
   line-height: 1;
   color: $color-black;
@@ -22,13 +34,13 @@
   margin-left:auto;
 }
 
-@media (min-width:768px) {
+@media (min-width:$tablet-width) {
   .additional__block {
     display: flex;
   }
 }
 
-@media (min-width:1300px) {
+@media (min-width:$desktop-width) {
   .additional {
     display: flex;
     justify-content: space-between;

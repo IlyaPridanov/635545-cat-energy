@@ -1,12 +1,39 @@
 .order-all {
+  @include wrap();
+
+  min-height: 289px;
+  padding-top: 65px;
+
   background-image: url("/img/gift-photo-mobile@1x.jpg");
   background-color: $color-green;
 }
 
 .order-all__link {
+  display: block;
+
+  margin: 0 auto;
+
+  width: 167px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   text-decoration: none;
   color: $color-white;
+  text-align: center;
+}
+
+.order-all__link-img {
+  display: block;
+
+  margin: 0 auto;
+  margin-bottom: 62px;
+
+  width: 60px;
+  height: 60px;
+
+}
+
+.order-all__link-img path {
+  fill: $color-white;
 }

@@ -5,10 +5,13 @@
 }
 
 .production__item {
-  border-bottom:1px solid $color-border;
+  margin-top: -1px;
+
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
 }
 
-@media (min-width:768px) {
+@media (min-width:$tablet-width) {
   .production__list {
     display: flex;
     flex-wrap: wrap;

@@ -1,13 +1,17 @@
 .textarea {
   resize: none;
+  padding: 10px;
+  padding-left: 14px;
 
-  width: 250px;
+  width: 280px;
   min-height: 150px;
 
-  border:1px solid black;
+  border:1px solid $color-textaria-border;
+
+  overflow: none;
 
   &::placeholder {
-    font-style: "Oswald",Arial,sans-serif;
+    font-family: $Oswald;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.258;
