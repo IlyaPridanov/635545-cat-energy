@@ -24,6 +24,7 @@
 }
 
 .exposition__item {
+  z-index: 2;
   position: relative;
 
   margin-bottom: 26px;
@@ -68,13 +69,116 @@
 }
 
 @media (min-width:$tablet-width) {
+  .exposition {
+    margin-bottom: 0px;
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid $color-textaria-border;
+  }
+
+  .exposition__caption {
+    margin-bottom: 22px;
+
+    font-size: 60px;
+    line-height: 1;
+  }
+
   .exposition__list {
     display: flex;
     flex-wrap: wrap;
+
+    padding: 0;
+  }
+
+  .exposition__item {
+    z-index: 20;
+    position: relative;
+
+    display: block;
+
+    margin: 0;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-top: 117px;
+
+    width: 248px;
+    min-height: 227px;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    &:nth-child(2n) {
+      margin-left: 136px;
+    }
+
+    &::after {
+      z-index: 2;
+
+      top: 5px;
+      left: 0px;
+
+      width: 80px;
+      height: 80px;
+
+      background-position: 15px 15px;
+    }
+
+    &::before {
+      content: "";
+
+      z-index: -1;
+      position: absolute;
+      top: -35px;
+      left: 118px;
+
+      display: block;
+
+      width: 227px;
+      height: 227px;
+
+      font-family:$Oswald;
+      font-weight:400;
+      font-size: 281px;
+      line-height: 1;
+      color: $color-white-grey;
+    }
+
+    &--leaflet-icon::before {
+      content: "1";
+    }
+
+    &--powder-icon::before {
+      content: "2";
+    }
+
+    &--knife-icon::before {
+      content: "3";
+    }
+
+    &--time-icon::before {
+      content: "4";
+    }
   }
 }
 
 @media (min-width:$desktop-width) {
+  .exposition {
+    border: none;
+  }
+
+  .exposition__item {
+    margin-right: 80px;
+    width: 245px;
+
+    &:nth-child(2n) {
+      margin-left: 0;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
   .exposition__list {
     display: flex;
     flex-wrap: wrap;

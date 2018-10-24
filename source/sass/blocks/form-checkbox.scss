@@ -56,3 +56,50 @@
 .form-checkbox__input:active + label::after {
   opacity: 0.5;
 }
+
+@media (min-width:$tablet-width) {
+  .form-checkbox {
+    margin-bottom: 50px;
+
+    width: 285px;
+  }
+
+  .form-checkbox__label {
+    margin-left: 59px;
+
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .form-checkbox__input + label::before {
+    content:"";
+
+    position:absolute;
+    top: -4px;
+    left: -58px;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid $color-grey-light;
+  }
+
+  .form-checkbox__input:checked + label::after {
+    content:"";
+
+    position: absolute;
+    top: 9px;
+    left: -48px;
+
+    width: 21px;
+    height: 16px;
+
+    background-image: url("/img/icon-tick.svg");
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .form-checkbox {
+    width: 245px;
+  }
+}

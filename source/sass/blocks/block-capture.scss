@@ -7,18 +7,322 @@
   line-height: 1;
   color: $color-black;
 
-  &::after {
+  &--catalog::after {
     content: "";
 
     position: absolute;
-    right: -200px;
+    right: -20px;
     top: 13px;
 
     display: block;
 
-    width: 100%;
+    width: 53px;
     height: 3px;
 
     background :$color-green;
+  }
+
+  &--program::after {
+    content: "";
+
+    position: absolute;
+    right: -20px;
+    top: 13px;
+
+    display: block;
+
+    width: 100px;
+    height: 3px;
+
+    background :$color-green;
+  }
+
+  &--program-comment::after {
+    content: "";
+
+    position: absolute;
+    right: -180px;
+    top: 13px;
+
+    display: block;
+
+    width: 158px;
+    height: 3px;
+
+    background :$color-green;
+  }
+
+  &--program-checkbox::after {
+    content: "";
+
+    position: absolute;
+    right: -159px;
+    top: 13px;
+
+    display: block;
+
+    width: 136px;
+    height: 3px;
+
+    background :$color-green;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .block-capture {
+    font-size: 36px;
+    line-height: 1;
+
+    background: $color-white;
+
+    &--catalog {
+      padding: 0 36px;
+    }
+
+    &--catalog::after {
+
+      right: -30px;
+      top: 21px;
+
+      width: 327px;
+      height: 3px;
+    }
+
+    &--catalog::before {
+      content: "";
+
+      position: absolute;
+      left: -30px;
+      top: 21px;
+
+      display: block;
+
+      width: 28px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--program {
+      position: relative;
+    }
+
+    &--program::after {
+      content: "";
+
+      position: absolute;
+      right: -187px;
+      top: 23px;
+
+      display: block;
+
+      width: 145px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--program::before {
+      content: "";
+
+      position: absolute;
+      left: -69px;
+      top: 23px;
+
+      display: block;
+
+      width: 30px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--program-comment::after {
+      content: "";
+
+      position: absolute;
+      right: -519px;
+      top: 23px;
+
+      display: block;
+
+      width: 480px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--program-comment::before {
+      content: "";
+
+      position: absolute;
+      left: -69px;
+      top: 23px;
+
+      display: block;
+
+      width: 30px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--program-checkbox::after {
+      content: "";
+
+      position: absolute;
+      right: -448px;
+      top: 23px;
+
+      display: block;
+
+      width: 406px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--program-checkbox::before {
+      content: "";
+
+      position: absolute;
+      left: -488px;
+      top: 23px;
+
+      display: block;
+
+      width: 446px;
+      height: 3px;
+
+      background :$color-green;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .block-capture {
+    &--catalog {
+      padding: 0;
+    }
+
+    &--catalog::after {
+      content: "";
+
+      position: absolute;
+      right: 0px;
+      top: 23px;
+
+      display: block;
+
+      width: 846px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--catalog::before {
+      content: "";
+
+      position: absolute;
+      left: -448px;
+      top: 23px;
+
+      display: block;
+
+      width: 406px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--program::after {
+      content: "";
+
+      position: absolute;
+      right: -818px;
+      top: 23px;
+
+      display: block;
+
+      width: 777px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--program::before {
+      content: "";
+
+      position: absolute;
+      left: -110px;
+      top: 23px;
+
+      display: block;
+
+      width: 69px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--program-comment::after {
+      content: "";
+
+      position: absolute;
+      right: -1149px;
+      top: 23px;
+
+      display: block;
+
+      width: 1110px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--program-comment::before {
+      content: "";
+
+      position: absolute;
+      left: -110px;
+      top: 23px;
+
+      display: block;
+
+      width: 69px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--program-checkboxt::after {
+      content: "";
+
+      position: absolute;
+      right: -1119px;
+      top: 23px;
+
+      display: block;
+
+      width: 1080px;
+      height: 3px;
+
+      background :$color-green;
+    }
+
+    &--program-checkbox::before {
+      content: "";
+
+      position: absolute;
+      left: -110px;
+      top: 23px;
+
+      display: block;
+
+      width: 69px;
+      height: 3px;
+
+      background :$color-green;
+    }
   }
 }

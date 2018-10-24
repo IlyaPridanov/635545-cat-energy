@@ -26,5 +26,31 @@
 }
 
 @media (min-width:$tablet-width) {
+  .additional-products {
+    margin-bottom: 69px;
+    padding-top: 9px;
+  }
 
+  .additional-products__link {
+    padding-top: 81px;
+  }
+
+  .additional-products__item {
+    border: 1px solid $color-border;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .additional-products {
+    padding-top: 18px;
+  }
+
+  .additional-products__item {
+    width: 895px;
+
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+  }
 }

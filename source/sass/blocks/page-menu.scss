@@ -47,14 +47,14 @@ $color-border-form: #797e88;
   &--this-page::after {
     content: "";
 
-    display: block;
+    display: none;
 
     position: absolute;
     left: 50%;
-    bottom: 12px;
+    bottom: 11px;
 
-    margin-left: -85px;
-    width: 169px;
+    margin-left: -50%;
+    width: 100%;
     height: 2px;
 
     background-color: $color-green;
@@ -67,10 +67,48 @@ $color-border-form: #797e88;
   }
 
   .page-menu__item {
+    margin: 0px 18px;
+
     border: none;
 
     &:last-child {
+      margin-right: 0;
+
       border-bottom: none;
+    }
+  }
+
+  .page-menu__link {
+    padding: 20px 0px;
+
+    font-family:$Oswald;
+    font-size: 18px;
+    line-height: 1.39;
+    font-weight:400;
+
+    &--this-page::after {
+      content: "";
+
+      display: block;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .page-menu__item {
+    margin: 0 17px;
+  }
+
+  .page-menu__item {
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+  }
+
+  .page-menu__link--index {
+    color: $color-white;
+    &--this-page::after {
+      background-color: $color-white;
     }
   }
 }

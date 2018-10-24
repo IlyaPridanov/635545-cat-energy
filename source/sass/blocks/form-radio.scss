@@ -58,3 +58,44 @@
 .form-radio__input:active + label::after {
   opacity: 0.5;
 }
+
+@media (min-width:$tablet-width) {
+  .form-radio {
+    margin-bottom: 30px;
+  }
+
+  .form-radio__label {
+    margin-left: 88px;
+
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .form-radio__input + label::before {
+    content:"";
+
+    position:absolute;
+    top: -4px;
+    left: -59px;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid $color-radio;
+    border-radius: 50%;
+  }
+
+  .form-radio__input:checked + label::after {
+    content:"";
+
+    position: absolute;
+    top: 7px;
+    left: -48px;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: $color-green;
+    border-radius: 50%;
+  }
+}

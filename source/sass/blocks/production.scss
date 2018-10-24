@@ -12,7 +12,13 @@
 }
 
 @media (min-width:$tablet-width) {
+  .production {
+    padding-top: 84px;
+  }
+
   .production__list {
+    @include wrap();
+
     display: flex;
     flex-wrap: wrap;
   }

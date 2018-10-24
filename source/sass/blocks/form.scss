@@ -69,22 +69,135 @@
 }
 
 @media (min-width:$tablet-width) {
+  .form {
+    margin: 0 auto;
+    padding-top: 66px;
+    padding-bottom: 49px;
+
+    width: 630px;
+  }
+
+  .form__part {
+    padding-bottom: 52px;
+
+    width: auto;
+
+    &--radio {
+      margin-bottom: 74px;
+      padding-top: 33px;
+      padding-bottom: 2px;
+
+      border: 1px solid $color-border;
+    }
+
+    &--contact {
+      padding-bottom: 39px;
+    }
+
+    &--checkbox {
+      margin-top: -9px;
+      padding-bottom: 2px;
+    }
+  }
+
   .form__list--checkbox-flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__item {
+    margin-bottom: 5px;
   }
 
   .form__btn-flex {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .form__speach-end {
+    margin-right: 105px;
+    margin-top: 16px;
+
+    width: 195px;
+
+    font-size: 16px;
+    line-height: 1;
+    text-align: right;
+  }
+
+  .form__legend {
+    margin-left: 0px;
+    margin-bottom: 77px;
+    padding: 0px;
+
+    &--checkbox {
+      margin-bottom: 66px;
+    }
   }
 }
 
 @media (min-width:$desktop-width) {
+  .form {
+    @include wrap();
+  }
   .form__flex1 {
     display: flex;
+
+    margin-bottom: 69px;
+  }
+
+  .form__part {
+    margin: 0;
+
+    width: 570px;
+
+    &--name-age {
+      padding: 0;
+    }
+
+    &--radio {
+      margin-left: 80px;
+    }
+
+    &--contact {
+      margin-bottom: 6px;
+    }
+
+    &--textaria {
+      padding-bottom: 60px;
+    }
+
+    &--checkbox {
+      margin-bottom: 19px;
+    }
   }
 
   .form__list {
+    display: block;
+  }
+
+  .form__list--mail-tel {
     display: flex;
+  }
+
+  .form__list--checkbox-flex {
+    @include wrap();
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__item--text:last-child {
+    margin-bottom: 0;
+  }
+
+  .form__btn-flex {
+    justify-content: flex-start;
+  }
+
+  .form__speach-end {
+    margin: 0;
+    margin-left: 64px;
   }
 }

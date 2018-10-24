@@ -49,6 +49,45 @@
 
 @media (min-width:$tablet-width) {
   .button {
-    margin: 0 70px;
+    &--cover-btn {
+      margin: 0;
+      margin-left: 118px;
+      padding: 15px 25px;
+
+      width: 246px;
+
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    &--white {
+      width: 250px;
+    }
+
+    &--form {
+      margin: 0;
+      padding: 16px 25px;
+
+      width: 282px;
+
+      font-size: 20px;
+      line-height: 1;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .button {
+    &--cover-btn {
+      margin-left: 190px;
+    }
+
+    &--white {
+      width: 170px;
+    }
+
+    &--form {
+      width: 570px;
+    }
   }
 }

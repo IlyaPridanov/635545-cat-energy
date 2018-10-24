@@ -1,6 +1,7 @@
 $color-cover-green: #64a83b;
 
 .cover {
+  z-index: 5;
   position: relative;
 
   width: 100%;
@@ -34,6 +35,9 @@ $color-cover-green: #64a83b;
 .cover__caption {
   @include wrap();
 
+  z-index: 5;
+  position: relative;
+
   margin-bottom: 25px;
 
   font-family:$Oswald;
@@ -45,6 +49,9 @@ $color-cover-green: #64a83b;
 }
 
 .cover__message {
+  z-index: 5;
+  position: relative;
+
   margin-bottom: 25px;
 
   font-family:$Oswald;
@@ -66,17 +73,27 @@ $color-cover-green: #64a83b;
 
 .cover__btn {
   @include wrap();
+
+  z-index: 5;
+  position: relative;
+
   font-size: 14px;
   line-height: 1.29;
 }
 
 @media (min-width:$tablet-width) {
   .cover {
+    margin-bottom: 530px;
+    padding-top: 53px;
+
     background: none;
   }
 
   .cover__caption {
-    margin-left: 120px;
+    margin-left: 117px;
+    margin-bottom: 41px;
+
+    width: 427px;
 
     font-size: 60px;
     text-align: left;
@@ -84,17 +101,33 @@ $color-cover-green: #64a83b;
   }
 
   .cover__message {
-    margin-left: 120px;
+    margin-top: 0;
+    margin-left: 117px;
+    margin-bottom: 49px;
 
     font-size: 20px;
     text-align: left;
     color: $color-black;
   }
 
+  .cover__img {
+    z-index: 1;
+    position: absolute;
+    top: 254px;
+    left: 30px;
+
+    display: block;
+
+    margin: 0;
+    width: auto;
+  }
+
   .cover__btn {
-    width: 260px;
+    margin: 0px;
     margin-left: 120px;
     padding: 20px 0;
+
+    width: 260px;
 
     font-size: 20px;
     line-height: 1;
@@ -103,15 +136,33 @@ $color-cover-green: #64a83b;
 }
 
 @media (min-width:$desktop-width) {
+  .cover {
+    z-index: -1;
+
+    margin:0;
+    margin-top:-120px;
+    padding-top: 225px;
+
+    width: 1440px;
+    min-height: 696px;
+
+    background-image: url("/img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 720px;
+    background-position-y: 0px;
+  }
+
   .cover__caption {
-    margin-left: 184px;
+    margin-left: 190px;
   }
 
   .cover__message {
-    margin-left: 184px;
+    margin-left: 190px;
+    margin-bottom: 52px;
   }
 
-  .cover__btn {
-    margin-left: 184px;
+  .cover__img {
+    top: 144px;
+    left: 560px;
   }
 }
