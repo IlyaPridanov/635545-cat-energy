@@ -1,5 +1,5 @@
 .textarea {
-  resize: none;
+  resize: vertical;
   padding: 10px;
   padding-left: 14px;
 
@@ -17,5 +17,26 @@
     line-height: 1.258;
     text-transform: uppercase;
     color: $color-grey;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .textarea {
+    padding: 9px;
+    padding-left: 19px;
+
+    width: 100%;
+    min-height: 175px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .textarea {
+    width: 1220px;
   }
 }

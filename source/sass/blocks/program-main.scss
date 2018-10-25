@@ -26,3 +26,39 @@
   color: $color-black-light;
   text-align: left;
 }
+
+@media (min-width:$tablet-width) {
+  .program-main {
+    @include wrap();
+
+    padding-top: 53px;
+  }
+
+  .program-main__capture {
+    margin-bottom: 55px;
+
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .program-main__speach {
+    margin: 0;
+    padding-left: 40px;
+
+    width: 365px;
+
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .program-main {
+    padding-top: 70px;
+    margin-bottom: 10px;
+  }
+
+  .program-main__speach {
+    padding-left: 0px;
+  }
+}

@@ -15,9 +15,31 @@
   text-align: left;
 }
 
+@media (min-width:$tablet-width) {
+  .catalog-main {
+    padding-top: 53px;
+    margin-bottom: 76px;
+  }
+
+  .catalog-main__caption {
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
 @media (min-width:$desktop-width) {
+  .catalog-main {
+    padding-top: 70px;
+    margin-bottom: 20px;
+  }
+
   .catalog-main__flex {
+    @include wrap();
+
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+
+    margin-top: 9px;
   }
 }

@@ -40,12 +40,12 @@
   &:active+svg path {
     fill: $color-green;
   }
-
-  &:invalid {
+/*Применение модификатора --necondition должно быть описано в js*/
+  &--necondition {
     border-color: $color-form-invalid;
   }
 
-  &:invalid+svg path {
+  &--necondition+svg path {
     fill: $color-form-invalid;
   }
 
@@ -72,5 +72,55 @@
   &--tel {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media (min-width:$tablet-width) {
+  .form-text {
+    margin-bottom: 20px;
+  }
+
+  .form-text__label {
+    margin-right: 17px;
+
+    font-size: 20px;
+    line-height: 1;
+
+    &--contact {
+      margin-right: 13px;
+    }
+  }
+
+  .form-text__input {
+    margin-left: 3px;
+    padding: 17px;
+    padding-top: 20px;
+
+    height: 52px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 1;
+    }
+  }
+
+  .form-text__icon {
+    top: 19px;
+    left: 596px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .form-text__icon {
+    top: 19px;
+    left: 532px;
+  }
+
+  .form-text--contact {
+    width: 570px;
+
+    &:first-child {
+      margin-right: 80px;
+    }
   }
 }

@@ -47,3 +47,47 @@
   color:$color-black;
   text-align: center;
 }
+
+@media (min-width:$tablet-width) {
+  .order-plus {
+    margin-top: 82px;
+    padding-top: 163px;
+    padding-bottom: 39px;
+
+    width: 324px;
+
+    border: 1px solid $color-textaria-border;
+  }
+
+  .order-plus__capture {
+    margin-bottom: 27px;
+
+    width: 150px;
+
+    font-size: 20px;
+    line-height: 1;
+
+    &::after {
+      top: -110px;
+      left: 45px;
+
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .order-plus__products-speach {
+    margin-bottom: 87px;
+
+    width: 175px;
+
+    font-size: 16px;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .order-plus {
+    width: 245px;
+  }
+}
