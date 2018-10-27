@@ -47,12 +47,12 @@
   &:active+svg path {
     fill: $color-green;
   }
-/*Применение модификатора --necondition должно быть описано в js*/
-  &--necondition {
+
+  &--error {
     border-color: $color-form-invalid;
   }
 
-  &--necondition+svg path {
+  &--error+svg path {
     fill: $color-form-invalid;
   }
 
@@ -83,7 +83,7 @@
   }
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .form-text {
     margin-bottom: 20px;
   }
@@ -124,7 +124,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .form-text__icon {
     top: 19px;
     left: 532px;

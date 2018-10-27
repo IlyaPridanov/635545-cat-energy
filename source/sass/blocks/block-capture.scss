@@ -19,7 +19,7 @@
     width: 53px;
     height: 3px;
 
-    background :$color-green;
+    background: $color-green;
   }
 
   &--program::after {
@@ -68,7 +68,7 @@
   }
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .block-capture {
     font-size: 36px;
     line-height: 1;
@@ -199,7 +199,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .block-capture {
     &--catalog {
       padding: 0;

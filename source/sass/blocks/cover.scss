@@ -1,4 +1,3 @@
-$color-cover-green: #64a83b;
 
 .cover {
   z-index: 5;
@@ -13,10 +12,13 @@ $color-cover-green: #64a83b;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 0px;
+  background-size: contain;
+
+  box-shadow: inset 0px -60px 0px 0px $color-white;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("/img/index-background-mobile@2x.jpg");
-    background-size: 320px auto;
+    background-size: contain;
   }
 }
 
@@ -28,8 +30,8 @@ $color-cover-green: #64a83b;
 
   margin-bottom: 25px;
 
-  font-family:$Oswald;
-  font-weight:400;
+  font-family: $Oswald;
+  font-weight: 400;
   font-size: 36px;
   line-height: 1;
   text-align: center;
@@ -42,8 +44,8 @@ $color-cover-green: #64a83b;
 
   margin-bottom: 25px;
 
-  font-family:$Oswald;
-  font-weight:400;
+  font-family: $Oswald;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1;
   color: $color-white;
@@ -69,7 +71,7 @@ $color-cover-green: #64a83b;
   line-height: 1.29;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .cover {
     @include wrap();
 
@@ -128,12 +130,12 @@ $color-cover-green: #64a83b;
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .cover {
     z-index: -1;
 
-    margin:0;
-    margin-top:-120px;
+    margin: 0;
+    margin-top: -120px;
     padding-top: 225px;
 
     width: 100%;
@@ -141,8 +143,10 @@ $color-cover-green: #64a83b;
 
     background-image: url("/img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position-x: 720px;
+    background-position-x: right;
     background-position-y: 0px;
+
+    box-shadow: none;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/index-background-desktop@2x.jpg");
@@ -152,17 +156,25 @@ $color-cover-green: #64a83b;
 
   .cover__caption {
 
-    margin-left: 190px;
+    margin-left: 80px;
   }
 
   .cover__message {
 
-    margin-left: 190px;
+    margin-left: 80px;
     margin-bottom: 52px;
   }
 
   .cover__img {
     top: 144px;
     left: 560px;
+  }
+
+  .cover__btn {
+    margin-left: 80px;
+  }
+
+  .cover-wrap {
+    @include wrap;
   }
 }

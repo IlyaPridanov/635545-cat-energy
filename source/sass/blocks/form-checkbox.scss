@@ -22,7 +22,7 @@
 .form-checkbox__input + label::before {
   content:"";
 
-  position:absolute;
+  position: absolute;
   top: -2px;
   left: -46px;
 
@@ -74,7 +74,7 @@
   .form-checkbox__input + label::before {
     content:"";
 
-    position:absolute;
+    position: absolute;
     top: -4px;
     left: -58px;
 
@@ -98,7 +98,7 @@
   }
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .form-checkbox {
     width: 245px;
 
@@ -108,7 +108,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .form-checkbox {
 
     &:nth-child(2n-1) {

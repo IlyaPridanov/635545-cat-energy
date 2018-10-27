@@ -43,7 +43,7 @@
   fill: $color-white;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .order-all {
     padding-top: 55px;
 
@@ -81,7 +81,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .order-all {
     margin-left: -245px;
     margin-bottom: 66px;

@@ -59,7 +59,7 @@
   opacity: 0.5;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .form-radio {
     margin-bottom: 30px;
   }
@@ -74,7 +74,7 @@
   .form-radio__input + label::before {
     content:"";
 
-    position:absolute;
+    position: absolute;
     top: -4px;
     left: -59px;
 

@@ -1,24 +1,24 @@
 .button {
   @include wrap();
 
-  display:block;
+  display: block;
 
-  padding:10px 30px;
+  padding: 10px 30px;
 
   font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  text-decoration:none;
-  text-transform:uppercase;
-  text-align:center;
-  color:$color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-white;
 
-  background:$color-green;
+  background: $color-green;
 
   &--white {
     color: $color-grey;
-    background:$color-white-grey;
+    background: $color-white-grey;
   }
 
   &--cover-btn {
@@ -27,27 +27,27 @@
   }
 
   &:hover {
-    background:$color-green-dark;
+    background: $color-green-dark;
   }
 
   &:active {
     opacity: 0.8;
 
-    background:$color-green-dark;
+    background: $color-green-dark;
   }
 
   &--white:hover {
-    background:$color-dark-grey;
+    background: $color-dark-grey;
   }
 
   &--white:active {
     opacity: 0.8;
 
-    background:$color-dark-grey;
+    background: $color-dark-grey;
   }
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .button {
     &--cover-btn {
       margin: 0;
@@ -76,10 +76,10 @@
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .button {
     &--cover-btn {
-      margin-left: 190px;
+      margin-left: 80px;
     }
 
     &--white {

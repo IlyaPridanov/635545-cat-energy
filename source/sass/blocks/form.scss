@@ -68,7 +68,7 @@
   color: $color-grey;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .form {
     margin: 0 auto;
     padding-top: 66px;
@@ -137,7 +137,7 @@
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .form {
     @include wrap();
   }
