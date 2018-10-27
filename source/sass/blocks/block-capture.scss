@@ -171,12 +171,12 @@
       content: "";
 
       position: absolute;
-      right: -448px;
+      right: -488px;
       top: 23px;
 
       display: block;
 
-      width: 406px;
+      width: 446px;
       height: 3px;
 
       background :$color-green;
@@ -295,7 +295,7 @@
       background :$color-green;
     }
 
-    &--program-checkboxt::after {
+    &--program-checkbox::after {
       content: "";
 
       position: absolute;

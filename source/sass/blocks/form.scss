@@ -103,7 +103,7 @@
   .form__list--checkbox-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .form__item {
@@ -186,6 +186,7 @@
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .form__item--text:last-child {
@@ -199,5 +200,6 @@
   .form__speach-end {
     margin: 0;
     margin-left: 64px;
+    margin-top: 16px;
   }
 }

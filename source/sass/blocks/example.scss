@@ -179,32 +179,8 @@
     padding-top: 43px;
     padding-bottom: 67px;
 
+    background: linear-gradient(to right, #f2f2f2 50%, $color-fon05cat 50%);
     box-shadow: inset 0px 620px 0px 0px $color-white;
-
-    &::after {
-      content: "";
-
-      z-index: 2;
-      position: absolute;
-      top: 620px;
-      right: 0px;
-
-      display: block;
-
-      width: 384px;
-      height: 462px;
-
-      background-color: $color-fon05cat;
-
-      box-shadow:
-        384px 0px 0px 0px $color-fon05cat,
-        768px 0px 0px 0px $color-fon05cat,
-        1152px 0px 0px 0px $color-fon05cat,
-        1536px 0px 0px 0px $color-fon05cat,
-        1920px 0px 0px 0px $color-fon05cat,
-        2304px 0px 0px 0px $color-fon05cat,
-        2688px 0px 0px 0px $color-fon05cat;
-    }
   }
 
   .example__caption {
@@ -364,27 +340,7 @@
 
     box-shadow: inset 0px 160px 0px 0px $color-white;
 
-    background: $color-white-grey;
-
-    &::after {
-      content: "";
-      top: 160px;
-      right: 0px;
-
-      width: 384px;
-      height: 460px;
-
-      background-color: $color-fon05cat;
-
-      box-shadow:
-        384px 0px 0px 0px $color-fon05cat,
-        768px 0px 0px 0px $color-fon05cat,
-        1152px 0px 0px 0px $color-fon05cat,
-        1536px 0px 0px 0px $color-fon05cat,
-        1920px 0px 0px 0px $color-fon05cat,
-        2304px 0px 0px 0px $color-fon05cat,
-        2688px 0px 0px 0px $color-fon05cat;
-    }
+    background: linear-gradient(to right, #f2f2f2 calc(50% + 325px), $color-fon05cat calc(50% + 325px));
   }
 
   .example__flex-wrap {
@@ -460,5 +416,9 @@
   .example__result-block {
     margin-top: 43px;
     margin-left: 39px;
+  }
+
+  .example__list-caption {
+    background-color: $color-white-grey;
   }
 }

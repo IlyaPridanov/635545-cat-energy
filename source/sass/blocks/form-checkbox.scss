@@ -101,5 +101,18 @@
 @media (min-width:$tablet-width) {
   .form-checkbox {
     width: 245px;
+
+    &:nth-child(2n-1) {
+      margin-right: 100px;
+    }
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .form-checkbox {
+
+    &:nth-child(2n-1) {
+      margin-right: 0px;
+    }
   }
 }

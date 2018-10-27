@@ -107,7 +107,7 @@ $color-border-form: #797e88;
 
   .page-menu__link--index {
     color: $color-white;
-    &--this-page::after {
+    &::after {
       background-color: $color-white;
     }
   }

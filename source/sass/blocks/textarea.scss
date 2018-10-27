@@ -6,6 +6,13 @@
   width: 280px;
   min-height: 150px;
 
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.258;
+  text-transform: uppercase;
+  color: $color-black;
+
   border:1px solid $color-textaria-border;
 
   overflow: none;
@@ -17,6 +24,7 @@
     line-height: 1.258;
     text-transform: uppercase;
     color: $color-grey;
+    opacity: 1;
   }
 }
 
@@ -28,9 +36,13 @@
     width: 100%;
     min-height: 175px;
 
+    font-size: 20px;
+    line-height: 1.5;
+
     &::placeholder {
       font-size: 20px;
       line-height: 1.5;
+      opacity: 1;
     }
   }
 }
