@@ -12,59 +12,107 @@
 
     position: absolute;
     right: -20px;
-    top: 13px;
+    top: 14px;
 
     display: block;
 
-    width: 53px;
+    width: 50px;
     height: 3px;
 
     background: $color-green;
+
+    box-shadow:
+      50px 0px 0px 0px $color-green,
+      100px 0px 0px 0px $color-green,
+      150px 0px 0px 0px $color-green,
+      200px 0px 0px 0px $color-green,
+      250px 0px 0px 0px $color-green,
+      300px 0px 0px 0px $color-green,
+      350px 0px 0px 0px $color-green,
+      450px 0px 0px 0px $color-green,
+      500px 0px 0px 0px $color-green,
+      550px 0px 0px 0px $color-green;
   }
 
   &--program::after {
     content: "";
 
     position: absolute;
-    right: -20px;
-    top: 13px;
+    right: 30px;
+    top: 14px;
 
     display: block;
 
-    width: 100px;
+    width: 50px;
     height: 3px;
 
-    background :$color-green;
+    background: $color-green;
+
+    box-shadow:
+      50px 0px 0px 0px $color-green,
+      100px 0px 0px 0px $color-green,
+      150px 0px 0px 0px $color-green,
+      200px 0px 0px 0px $color-green,
+      250px 0px 0px 0px $color-green,
+      300px 0px 0px 0px $color-green,
+      350px 0px 0px 0px $color-green,
+      450px 0px 0px 0px $color-green,
+      500px 0px 0px 0px $color-green,
+      550px 0px 0px 0px $color-green;
   }
 
   &--program-comment::after {
     content: "";
 
     position: absolute;
-    right: -180px;
-    top: 13px;
+    right: -70px;
+    top: 14px;
 
     display: block;
 
-    width: 158px;
+    width: 50px;
     height: 3px;
 
     background :$color-green;
+
+    box-shadow:
+      50px 0px 0px 0px $color-green,
+      100px 0px 0px 0px $color-green,
+      150px 0px 0px 0px $color-green,
+      200px 0px 0px 0px $color-green,
+      250px 0px 0px 0px $color-green,
+      300px 0px 0px 0px $color-green,
+      350px 0px 0px 0px $color-green,
+      450px 0px 0px 0px $color-green,
+      500px 0px 0px 0px $color-green,
+      550px 0px 0px 0px $color-green;
   }
 
   &--program-checkbox::after {
     content: "";
 
     position: absolute;
-    right: -159px;
+    right: -70px;
     top: 13px;
 
     display: block;
 
-    width: 136px;
+    width: 50px;
     height: 3px;
 
     background :$color-green;
+
+    box-shadow:
+      50px 0px 0px 0px $color-green,
+      100px 0px 0px 0px $color-green,
+      150px 0px 0px 0px $color-green,
+      200px 0px 0px 0px $color-green,
+      250px 0px 0px 0px $color-green,
+      300px 0px 0px 0px $color-green,
+      350px 0px 0px 0px $color-green,
+      450px 0px 0px 0px $color-green,
+      500px 0px 0px 0px $color-green,
+      550px 0px 0px 0px $color-green;
   }
 }
 
@@ -80,7 +128,6 @@
     }
 
     &--catalog::after {
-
       right: -30px;
       top: 21px;
 
@@ -88,19 +135,35 @@
       height: 3px;
     }
 
-    &--catalog::before {
+    &::before {
       content: "";
 
       position: absolute;
-      left: -30px;
+      left: -20px;
       top: 21px;
 
       display: block;
 
-      width: 28px;
+      width: 20px;
       height: 3px;
 
       background :$color-green;
+
+      box-shadow:
+      -20px 0px 0px 0px $color-green,
+      -40px 0px 0px 0px $color-green,
+      -60px 0px 0px 0px $color-green,
+      -80px 0px 0px 0px $color-green,
+      -100px 0px 0px 0px $color-green,
+      -120px 0px 0px 0px $color-green,
+      -140px 0px 0px 0px $color-green,
+      -160px 0px 0px 0px $color-green,
+      -180px 0px 0px 0px $color-green,
+      -200px 0px 0px 0px $color-green,
+      -220px 0px 0px 0px $color-green,
+      -240px 0px 0px 0px $color-green,
+      -260px 0px 0px 0px $color-green,
+      -280px 0px 0px 0px $color-green;
     }
 
     &--program {
@@ -108,99 +171,94 @@
     }
 
     &--program::after {
-      content: "";
-
-      position: absolute;
       right: -187px;
       top: 23px;
 
-      display: block;
-
       width: 145px;
       height: 3px;
-
-      background :$color-green;
     }
 
     &--program::before {
-      content: "";
-
-      position: absolute;
-      left: -69px;
-      top: 23px;
-
-      display: block;
-
-      width: 30px;
-      height: 3px;
-
-      background :$color-green;
+      left: -40px;
     }
 
     &--program-comment::after {
-      content: "";
-
-      position: absolute;
       right: -519px;
       top: 23px;
 
-      display: block;
-
       width: 480px;
-      height: 3px;
-
-      background :$color-green;
+      height: 3px;;
     }
 
     &--program-comment::before {
-      content: "";
-
-      position: absolute;
-      left: -69px;
-      top: 23px;
-
-      display: block;
-
-      width: 30px;
-      height: 3px;
-
-      background :$color-green;
+      left: -40px;
     }
 
     &--program-checkbox::after {
-      content: "";
-
-      position: absolute;
       right: -488px;
       top: 23px;
 
-      display: block;
-
       width: 446px;
       height: 3px;
-
-      background :$color-green;
     }
 
     &--program-checkbox::before {
-      content: "";
-
-      position: absolute;
-      left: -488px;
-      top: 23px;
-
-      display: block;
-
-      width: 446px;
-      height: 3px;
-
-      background :$color-green;
+      left: -40px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .block-capture {
+    &::before {
+      box-shadow:
+      -20px 0px 0px 0px $color-green,
+      -40px 0px 0px 0px $color-green,
+      -60px 0px 0px 0px $color-green,
+      -80px 0px 0px 0px $color-green,
+      -100px 0px 0px 0px $color-green,
+      -120px 0px 0px 0px $color-green,
+      -140px 0px 0px 0px $color-green,
+      -160px 0px 0px 0px $color-green,
+      -180px 0px 0px 0px $color-green,
+      -200px 0px 0px 0px $color-green,
+      -220px 0px 0px 0px $color-green,
+      -240px 0px 0px 0px $color-green,
+      -260px 0px 0px 0px $color-green,
+      -280px 0px 0px 0px $color-green,
+      -300px 0px 0px 0px $color-green,
+      -320px 0px 0px 0px $color-green,
+      -340px 0px 0px 0px $color-green,
+      -360px 0px 0px 0px $color-green,
+      -380px 0px 0px 0px $color-green,
+      -400px 0px 0px 0px $color-green,
+      -420px 0px 0px 0px $color-green,
+      -440px 0px 0px 0px $color-green;
+    }
+
+    &::after {
+      box-shadow:
+      50px 0px 0px 0px $color-green,
+      100px 0px 0px 0px $color-green,
+      150px 0px 0px 0px $color-green,
+      200px 0px 0px 0px $color-green,
+      250px 0px 0px 0px $color-green,
+      300px 0px 0px 0px $color-green,
+      350px 0px 0px 0px $color-green,
+      450px 0px 0px 0px $color-green,
+      500px 0px 0px 0px $color-green,
+      550px 0px 0px 0px $color-green,
+      600px 0px 0px 0px $color-green,
+      650px 0px 0px 0px $color-green,
+      700px 0px 0px 0px $color-green,
+      750px 0px 0px 0px $color-green,
+      800px 0px 0px 0px $color-green,
+      850px 0px 0px 0px $color-green,
+      900px 0px 0px 0px $color-green,
+      950px 0px 0px 0px $color-green,
+      1000px 0px 0px 0px $color-green;
+    }
+
     &--catalog {
       padding: 0;
     }
@@ -221,18 +279,7 @@
     }
 
     &--catalog::before {
-      content: "";
-
-      position: absolute;
-      left: -448px;
-      top: 23px;
-
-      display: block;
-
-      width: 406px;
-      height: 3px;
-
-      background :$color-green;
+      left: -40px;
     }
 
     &--program::after {
@@ -245,21 +292,6 @@
       display: block;
 
       width: 777px;
-      height: 3px;
-
-      background :$color-green;
-    }
-
-    &--program::before {
-      content: "";
-
-      position: absolute;
-      left: -110px;
-      top: 23px;
-
-      display: block;
-
-      width: 69px;
       height: 3px;
 
       background :$color-green;
@@ -280,21 +312,6 @@
       background :$color-green;
     }
 
-    &--program-comment::before {
-      content: "";
-
-      position: absolute;
-      left: -110px;
-      top: 23px;
-
-      display: block;
-
-      width: 69px;
-      height: 3px;
-
-      background :$color-green;
-    }
-
     &--program-checkbox::after {
       content: "";
 
@@ -305,21 +322,6 @@
       display: block;
 
       width: 1080px;
-      height: 3px;
-
-      background :$color-green;
-    }
-
-    &--program-checkbox::before {
-      content: "";
-
-      position: absolute;
-      left: -110px;
-      top: 23px;
-
-      display: block;
-
-      width: 69px;
       height: 3px;
 
       background :$color-green;
