@@ -79,6 +79,8 @@
 @media (min-width: $desktop-width) {
   .button {
     &--cover-btn {
+      z-index: 10;
+
       margin-left: 80px;
     }
 

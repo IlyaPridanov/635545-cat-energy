@@ -150,8 +150,6 @@
   .form__part {
     margin: 0;
 
-    width: 570px;
-
     &--name-age {
       padding: 0;
     }
@@ -179,6 +177,8 @@
 
   .form__list--mail-tel {
     display: flex;
+
+    justify-content: space-between;
   }
 
   .form__list--checkbox-flex {

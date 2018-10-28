@@ -141,7 +141,9 @@
     width: 100%;
     min-height: 696px;
 
-    background-image: url("/img/index-background-desktop@1x.jpg");
+
+    background-image: url("/img/index-background-desktop@1x.jpg"),
+    linear-gradient(to right, $color-white 50%, $color-cover-green 50%);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 0px;
@@ -167,7 +169,7 @@
 
   .cover__img {
     top: 144px;
-    left: 560px;
+    left: calc(50% - 160px);
   }
 
   .cover__btn {
@@ -176,5 +178,9 @@
 
   .cover-wrap {
     @include wrap;
+
+    z-index: -50;
+
+    /*background: linear-gradient(to right, $color-white 50%, $color-cover-green 50%);*/
   }
 }

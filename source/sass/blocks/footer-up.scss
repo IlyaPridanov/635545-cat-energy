@@ -128,12 +128,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer-up__logo {
+    width: 145px;
+  }
+
   .footer-up {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-  .footer-up-wrap {
+  .footer-up__wrap {
     @include wrap();
 
     display: flex;
@@ -198,18 +202,22 @@
 
 
 @media (min-width: $desktop-width) {
-  .footer-up-wrap {
-    justify-content: center;
+  .footer-up__wrap {
+    justify-content: space-between;
+
+    width: 1220px;
   }
 
   .footer-up__logo {
     margin: 0;
 
-    width: 145px;
+    width: 160px;
   }
 
   .footer-up__social-list {
     margin-left: auto;
     margin-right: auto;
+
+    width: 140px;
   }
 }

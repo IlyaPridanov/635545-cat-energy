@@ -17,6 +17,16 @@
 
   overflow: none;
 
+  &:active {
+    border-color: $color-form-active;
+
+    outline: none;
+  }
+
+  &--error {
+    border-color: $color-form-invalid;
+  }
+
   &::placeholder {
     font-family: $Oswald;
     font-weight: 400;

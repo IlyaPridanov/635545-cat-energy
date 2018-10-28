@@ -129,7 +129,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .production__item {
+  .production-card {
     margin-right: 80px;
 
 
@@ -152,8 +152,5 @@
     width: 170px;
   }
 
-  .production__item-order {
-    width: 245px;
-  }
-
 }
+

@@ -26,7 +26,7 @@
 }
 
 .form-text__input {
-  padding: 0 13px;
+  padding: 13px;
 
   width: 100%;
   height: 45px;
@@ -36,12 +36,19 @@
   font-size: 16px;
   line-height: 1.14;
   text-transform: uppercase;
+  vertical-align: middle;
   color: $color-black;
+
+  border: 1px solid $color-textaria-border;
+
+  box-shadow: 0px 0px 0px 0px;
 
   outline: none;
 
   &:active {
     border-color: $color-form-active;
+
+    outline: none;
   }
 
   &:active+svg path {
@@ -57,6 +64,7 @@
   }
 
   &::placeholder {
+    vertical-align: middle;
     font-family: $Oswald;
     font-weight: 400;
     font-size: 16px;
@@ -83,6 +91,10 @@
   }
 }
 
+.form-text__label--contact {
+  width: 74px;
+}
+
 @media (min-width: $tablet-width) {
   .form-text {
     margin-bottom: 20px;
@@ -101,8 +113,7 @@
 
   .form-text__input {
     margin-left: 3px;
-    padding: 0;
-    padding: 0 17px;
+    padding: 14px 17px;
 
     height: 52px;
 
@@ -122,6 +133,10 @@
     top: 19px;
     left: 596px;
   }
+
+  .form-text__label--contact {
+    width: 74px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -136,5 +151,9 @@
     &:first-child {
       margin-right: 80px;
     }
+  }
+
+  .form-text__label--contact {
+    width: 74px;
   }
 }
