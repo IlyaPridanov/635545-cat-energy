@@ -2,10 +2,6 @@
   margin-bottom: 21px;
 }
 
-.form-checkbox__input {
-  display: none;
-}
-
 .form-checkbox__label {
   position: relative;
 
@@ -50,7 +46,7 @@
   width: 21px;
   height: 16px;
 
-  background-image: url("/img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
 }
 
 .form-checkbox__input:active + label::after {
@@ -94,7 +90,7 @@
     width: 21px;
     height: 16px;
 
-    background-image: url("/img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
   }
 }
 

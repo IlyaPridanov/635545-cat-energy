@@ -15,10 +15,6 @@
   color: $color-black-light;
 }
 
-.form-radio__input {
-  display: none;
-}
-
 .form-radio__input:active + label {
   opacity: 0.5;
 }

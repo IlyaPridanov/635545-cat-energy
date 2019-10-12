@@ -52,37 +52,37 @@
   }
 
   &--leaflet-icon::after {
-    background-image: url("/img/advantage-leaf@1x.png");
+    background-image: url("../img/advantage-leaf@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("/img/advantage-leaf@2x.png");
+      background-image: url("../img/advantage-leaf@2x.png");
       background-size: 50px auto;
     }
   }
 
   &--powder-icon::after {
-    background-image: url("/img/advantage-powder@1x.png");
+    background-image: url("../img/advantage-powder@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("/img/advantage-powder@2x.png");
+      background-image: url("../img/advantage-powder@2x.png");
       background-size: 50px auto;
     }
   }
 
   &--knife-icon::after {
-    background-image: url("/img/advantage-dining@1x.png");
+    background-image: url("../img/advantage-dining@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("/img/advantage-dining@2x.png");
+      background-image: url("../img/advantage-dining@2x.png");
       background-size: 50px auto;
     }
   }
 
   &--time-icon::after {
-    background-image: url("/img/advantage-clock@1x.png");
+    background-image: url("../img/advantage-clock@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("/img/advantage-clock@2x.png");
+      background-image: url("../img/advantage-clock@2x.png");
       background-size: 50px auto;
     }
   }

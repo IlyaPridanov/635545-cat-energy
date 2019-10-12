@@ -12,6 +12,7 @@ var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var webp = require("gulp-webp");
 var del = require("del");
+var concat = require("gulp-concat");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -50,12 +51,20 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/js/**",
       "source/*.html"
     ], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
+});
+
+gulp.task("js", function () {
+  return gulp.src([
+    "node_modules/picturefill/dist/picturefill.min.js",
+    "source/js/**/*.js"
+  ])
+  .pipe(concat("all.js"))
+  .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("server", function () {
@@ -81,5 +90,6 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "images",
-  "webp"
+  "webp",
+  "js"
 ));

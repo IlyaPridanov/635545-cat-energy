@@ -5,6 +5,12 @@
 @import "scaffolding";
 @import "wrap";
 
+@import "blocks/button";
+@import "blocks/form";
+@import "blocks/form-text";
+@import "blocks/form-radio";
+@import "blocks/textarea";
+@import "blocks/form-checkbox";
 @import "blocks/page-menu";
 @import "blocks/page-header";
 @import "blocks/cover";
@@ -15,17 +21,11 @@
 @import "blocks/footer-up";
 @import "blocks/catalog-main";
 @import "blocks/production";
-@import "blocks/button";
 @import "blocks/production-card";
 @import "blocks/order-plus";
 @import "blocks/additional-products";
 @import "blocks/additional";
 @import "blocks/order-all";
 @import "blocks/program-main";
-@import "blocks/form";
-@import "blocks/form-text";
-@import "blocks/form-radio";
-@import "blocks/textarea";
-@import "blocks/form-checkbox";
 @import "blocks/visually-hidden";
 @import "blocks/block-capture";
